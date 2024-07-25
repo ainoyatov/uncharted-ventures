@@ -1,10 +1,12 @@
 import Image from "next/image";
+import ContactForm from '@/components/google/contactForm/contact-form'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between lg:pt-4">
-      <div className="z-10 w-full px-4 items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <main className="flex flex-col items-center justify-between lg:pt-4 min-w-[400px]">
+      
+      <div className="z-10 w-full px-4 items-center justify-between font-mono text-sm lg:flex ">
+        <p className="fixed lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Uncharted Ventures&nbsp;
           <code className="font-mono font-bold">LLC</code>
         </p>
@@ -28,16 +30,32 @@ export default function Home() {
         </div> */}
       </div>
       
-      <div className="flex">
+      <div className="relative w-full h-screen">
           <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-          src="/modern-condo.jpeg"
-          alt="Hope Page Image"
-          width={3480}
-          height={3480}
-          priority
-        />
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+            src="/modern-condo.jpeg"
+            alt="Hope Page Image"
+            fill
+            objectFit="cover"
+            priority
+          />
+          
+          <div className="absolute inset-0 grid md:grid-cols-2 items-center  place-items-center p-4 md:px-10 xl:p-16 2xl:p-24">
+            <div className="">
+              <div className="flex flex-col">
+                <h1 className="bg-gradient-to-r from-amber-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-5xl sm:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[156px]">Sell Your House</h1>
+                <br />
+                <h1 className="bg-gradient-to-r from-emerald-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-5xl sm:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[156px]">Fast For Cash!</h1>
+              </div>
+              
+            </div>
+            <div className="">
+              <ContactForm />
+            </div>
+          </div>
       </div>
+
+      
 
       <div className="mb-32 mt-16 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
