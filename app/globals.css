@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.button__color {
+  @apply bg-blue-400 dark:bg-white dark:text-black text-white text-lg rounded-lg w-full  transition-colors hover:border-gray-300 hover:bg-fuchsia-400 hover:dark:border-neutral-700 hover:dark:bg-blue-200
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+/* .title__color {
+  @apply bg-gradient-to-r from-emerald-200 via-range-600 to-blue-200 text-white text-lg;
+} */

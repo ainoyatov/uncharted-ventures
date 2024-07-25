@@ -1,7 +1,13 @@
 'use client'
 
+import CustomButton from '@/components/custom-buttons/customButton';
+
 
 const ContactForm = () => {
+
+    const handleSubmit = () => {
+        alert('Message Sent!!!')
+    }
 
     return (
         <form>
@@ -68,7 +74,14 @@ const ContactForm = () => {
                             className="border border-[#F0F0F0] h-[50px] rounded-lg p-5 mb-5  min-w-16 max-w-40"
                         />
                     </div>
+                </div>
 
+                <div>
+                    <CustomButton 
+                        title="Get Cash Offer"
+                        containerStyles="bg-gradient-to-r from-emerald-200 via-orange-600 to-slate-800 w-full text-white text-xl rounded-lg"
+                        handleClick={handleSubmit}
+                    />
                 </div>
             </div>
         </form>
