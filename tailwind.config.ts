@@ -13,6 +13,7 @@ const config: Config = {
       'xs': '475px',
       'ml': '900px',
       '3xl': '1537px',
+      '4xl': '3481px',
       ...defaultTheme.screens,
     },
     extend: {
