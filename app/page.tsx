@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactForm from '@/components/contact-forms/contactForm'
+import ContactMiniForm from "@/components/contact-forms/contactMini";
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="relative z-[-1] max-md:hidden flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+      <div className="relative max-md:hidden flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/modern-condo.jpeg"
           alt="Next.js Logo"
           width={3480}
@@ -22,64 +23,12 @@ export default function Home() {
         />
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
-          <div className="">
-            <h1 className=" bg-gradient-to-r from-amber-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell Your House</h1>
+          <div className="flex flex-col space-y-4">
+            <h1 className="bg-gradient-to-r from-amber-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell Your House</h1>
             <h1 className="bg-gradient-to-r from-emerald-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
-            <form className="border-orange-400 border-4 p-2">
-              <div className='mb-2 flex justify-center'>
-                <p className="text-blue-700 font-bold text-sm lg:text-lg 2xl:text-2xl">Get Free No-Obligation Offer Now!</p>
-              </div>
-              <div className='flex flex-row place-items-center mb-2'>
-                <div className="flex flex-col">
-                  <div className='flex p-2 items-center justify-center w-6 h-6 bg-blue-500 text-white text-xl rounded-full'>1</div>
-                  <div className="text-[8px] text-slate-600">Contact Information</div>
-                </div>
-                <div className='flex flex-col w-full h-px bg-blue-500 mx-4'></div>
-                <div className="flex flex-col">
-                  <div className='flex p-2 items-center justify-center w-6 h-6 bg-blue-500 text-white text-xl rounded-full'>2</div>
-                  <div className="text-[8px] text-slate-600">Property Details</div>
-                </div>
-
-                
-              </div>  
-              <div className='mb-2'>
-                <input type="text"  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Property Address" required />
-              </div>
-              <div className="grid gap-2 mb-2 md:grid-cols-3">
-                <div>
-                  <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="City" required />
-                </div>
-                <div>
-                  <input type="text" id="last_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="State" required />
-                </div>
-                <div>
-                  <input type="text" id="company" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Zipcode" required />
-                </div>
-              </div>
-              <div className="mb-2">
-                <input type="full-name" placeholder="Full Name" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-              </div>
-              <div className="grid gap-2 mb-2 md:grid-cols-2">
-                <div>
-                  <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
-                </div>
-                <div>
-                  <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Phone" required/>
-                </div>
-              </div>
-              
-              <div className="flex items-start p-2">
-                <div className="flex items-center h-3">
-                <input id="remember" type="checkbox" value="" className="w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-                </div>
-                <label htmlFor="remember" className="ms-2 text-[8px] text-slate-50 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.</label>
-              </div>
-              <div className="py-2">
-                <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-2 py-0.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Cash Offer</button>
-              </div>
-            </form>
+            <ContactMiniForm />
           </div>
         </div>
       </div>
