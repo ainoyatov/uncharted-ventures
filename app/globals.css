@@ -17,6 +17,7 @@
 }
 
 body {
+  width: auto!important; overflow-x: hidden!important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -32,9 +33,7 @@ body {
   }
 }
 
-html {
-  overflow-x: hidden;
-}
+
 
 .button__color {
   @apply bg-blue-400 dark:bg-white dark:text-black text-white text-lg rounded-lg w-full  transition-colors hover:border-gray-300 hover:bg-fuchsia-400 hover:dark:border-neutral-700 hover:dark:bg-blue-200
