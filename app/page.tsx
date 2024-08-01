@@ -4,7 +4,7 @@ import ContactMiniForm from "@/components/contact-forms/contactMini";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center  py-24 md:p-0 p-4">
+    <main className="flex min-h-screen flex-col items-center py-4 md:p-0 lg:p-4 ">
       <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center p-4">
         <p className="fixed lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Uncharted Ventures&nbsp;
@@ -24,8 +24,8 @@ export default function Home() {
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
-            <h1 className="bg-gradient-to-r from-amber-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell Your House</h1>
-            <h1 className="bg-gradient-to-r from-emerald-200 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
+            <h1 className="bg-gradient-to-r from-white via-orange-600 to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell Your House</h1>
+            <h1 className="bg-gradient-to-r from-white via-orange-600 to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
             <ContactMiniForm />
@@ -33,13 +33,15 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col items-center md:hidden">
-        <div className="">
-          <h1 className="mb-4 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-5xl ">Sell Your House</h1>
-          <h1 className="bg-gradient-to-r from-fuchsia-300 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-5xl ">Fast For Cash!</h1>
+      <div className="flex flex-col place-items-center py-8  md:hidden">
+        <div className="flex flex-col justify-center">
+          <h1 className="h-32 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-6xl ">Sell Your House</h1>
+          <h1 className="h-32 bg-gradient-to-r from-fuchsia-300 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-6xl ">Fast For Cash!</h1>
         </div>
-        <div className="p-2 py-8 max-w-4xl">
-          <ContactForm />
+        <div className=" bg-image-main bg-cover ">
+          <div className="backdrop-blur-md">
+            <ContactForm />
+          </div>
         </div>
       </div>
 

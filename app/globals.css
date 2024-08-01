@@ -47,10 +47,10 @@ body {
   @apply bg-blue-500 text-white font-bold py-2 px-2 opacity-50 cursor-not-allowed rounded-lg text-sm w-full sm:w-auto  text-center;
 }
 
+.title-clr {
+  @apply text-lg text-white bg-gradient-to-r from-emerald-200 via-orange-600 to-blue-200 
+}
+
 .active-btn {
   @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto py-2 px-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
 }
-
-/* .title__color {
-  @apply bg-gradient-to-r from-emerald-200 via-range-600 to-blue-200 text-white text-lg;
-} */
