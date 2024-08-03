@@ -35,8 +35,8 @@ export default function Home() {
       
       <div className="flex flex-col place-items-center py-8  md:hidden">
         <div className="flex flex-col justify-center">
-          <h1 className="h-32 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-6xl ">Sell Your House</h1>
-          <h1 className="h-32 bg-gradient-to-r from-fuchsia-300 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-6xl ">Fast For Cash!</h1>
+          <h1 className="h-32 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-5xl ">Sell Your House</h1>
+          <h1 className="h-32 bg-gradient-to-r from-fuchsia-300 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-5xl ">Fast For Cash!</h1>
         </div>
         <div className=" bg-image-main bg-cover ">
           <div className="backdrop-blur-md">

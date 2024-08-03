@@ -19,7 +19,7 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center'>
             <div className='mb-6 flex w-full max-xs:px-10 justify-center'>
-                <div className="text-blue-700 font-bold text-2xl py-4">Get Free No-Obligation Offer Now!</div>
+                <div className="text-blue-700 font-bold text-2xl p-5">Get Free No-Obligation Offer Now!</div>
             </div>
             <div className='flex flex-row place-items-center mb-6 w-3/4'>
                 <div className="flex flex-col">
