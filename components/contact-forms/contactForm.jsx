@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-const ContactForm = () => {
+const ContactFormMobile = () => {
 
     const [isToggled, setIsToggled] = useState(false);
     const {register, handleSubmit, reset} = useForm();
@@ -23,7 +23,7 @@ const ContactForm = () => {
             </div>
             <div className='flex flex-row place-items-center mb-6 w-3/4'>
                 <div className="flex flex-col">
-                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-600 text-white text-xl font-bold rounded-full'>1</div>
+                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-500 text-white text-xl font-bold rounded-full'>1</div>
                     <div className="text-sm text-slate-600">Contact Information</div>
                 </div>
                 <div className='flex flex-col w-full h-px bg-blue-500 mx-8'></div>
@@ -158,4 +158,4 @@ const ContactForm = () => {
     );
 }
 
-export default ContactForm;
+export default ContactFormMobile;

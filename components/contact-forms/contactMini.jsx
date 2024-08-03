@@ -5,7 +5,7 @@ import {useForm} from 'react-hook-form';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useState } from 'react';
 
-const ContactMiniForm = () => {
+const ContactFormDesktop = () => {
 
     const {register, handleSubmit, reset} = useForm();
     const [captcha, setCaptcha] = useState(null);
@@ -123,7 +123,7 @@ const ContactMiniForm = () => {
                         {...register('tos')}
                         onClick={toggle}
                     />
-            </div>
+                </div>
                 <label
                     htmlFor="remember"
                     className="ms-2 text-[8px] text-slate-50 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
@@ -154,4 +154,4 @@ const ContactMiniForm = () => {
     );
 }
 
-export default ContactMiniForm;
+export default ContactFormDesktop;
