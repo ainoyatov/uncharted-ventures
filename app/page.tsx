@@ -53,8 +53,8 @@ export default function Home() {
           </div>
           
         </div>
-        <div className=" bg-image-main bg-cover ">
-          <div className="backdrop-blur-md">
+        <div className="bg-image-main bg-cover">
+          <div className="">
             <ContactFormMobile />
           </div>
         </div>
