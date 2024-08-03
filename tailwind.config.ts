@@ -21,6 +21,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "image-main": "url('/modern-condo.jpeg')",
+        "image-top": "url('/triangle-roof-homes.jpg')",
       },
       backgroundSize: {
         "custom-image-main": '200%'

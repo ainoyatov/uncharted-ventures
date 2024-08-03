@@ -1,6 +1,7 @@
 import Image from "next/image";
-import ContactFormMobile from '@/components/contact-forms/contactForm'
-import ContactMiniForm from "@/components/contact-forms/contactMini";
+import ContactFormMobile from '@/components/contact-forms/contactFormMobile'
+import ContactFormDesktop from "@/components/contact-forms/contactFormDesktop";
+import { Icon, IconifyIcon } from "@iconify/react";
 
 export default function Home() {
   return (
@@ -28,15 +29,29 @@ export default function Home() {
             <h1 className="bg-gradient-to-r from-white via-orange-600 to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
-            <ContactMiniForm />
+            <ContactFormDesktop />
           </div>
         </div>
       </div>
       
-      <div className="flex flex-col place-items-center py-8  md:hidden">
-        <div className="flex flex-col place-items-center p-2">
-          <h1 className="h-32 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-5xl xs:text-6xl ">Sell Your House</h1>
-          <h1 className="h-32 bg-gradient-to-r from-fuchsia-300 via-yellow-600 to-orange-600 bg-clip-text text-transparent text-5xl xs:text-6xl ">Fast For Cash!</h1>
+      <div className="flex flex-col place-items-center md:hidden bg-image-top bg-contain bg-bottom">
+        <div className="flex flex-col p-8 ">
+          <div className="py-2 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-2sm xs:text-6xl ">Sell Your House</div>
+          <div className="py-2 bg-gradient-to-l from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-2sm xs:text-6xl ">Fast For Cash!</div>
+          
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+            <Icon icon="game-icons:check-mark"/>
+            <div className=" text-xl text-blue-700">Top Dollar Cash Offer</div>  
+          </div>
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+            <Icon icon="game-icons:check-mark"/>
+            <div className="text-blue-700 text-xl">Close Within 10 Days</div>  
+          </div>
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+            <Icon icon="game-icons:check-mark"/>
+            <div className="text-blue-700 text-xl">Sell In Any Condition</div>  
+          </div>
+          
         </div>
         <div className=" bg-image-main bg-cover ">
           <div className="backdrop-blur-md">
