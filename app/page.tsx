@@ -34,10 +34,14 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col place-items-center md:hidden bg-image-top bg-contain bg-bottom">
-        <div className="flex flex-col p-8 ">
-          <div className="py-2 bg-gradient-to-r from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-2sm xs:text-6xl ">Sell Your House</div>
-          <div className="py-2 bg-gradient-to-l from-amber-200 via-yellow-600 to-fuchsia-600 bg-clip-text text-transparent text-2sm xs:text-6xl ">Fast For Cash!</div>
+      <div className="flex flex-col place-items-center md:hidden bg-image-top bg-contain bg-center">
+        <div className="flex flex-col p-4">
+          <div className="flex flex-row flex-wrap">
+            <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
+            <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
+            <div className="animate-bounce p-2 bg-gradient-to-t from-slate-500 via-blue-400 to-orange-600 bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
+          </div>
+          <div className="p-2  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl ">Fast For Cash!</div>
           
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark"/>

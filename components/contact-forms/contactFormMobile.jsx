@@ -18,18 +18,19 @@ const ContactFormMobile = () => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center backdrop-blur-sm'>
-            <div className='mb-6 flex w-full max-xs:px-10 justify-center'>
-                <div className="text-blue-700 font-bold text-2xl p-5">Get Free No-Obligation Offer Now!</div>
+            <div className='mb-4 flex max-xs:flex-col p-2 xs:py-8'>
+                <div className="text-white font-bold text-2xl sm:text-3xl">Get Free No-Obligation</div>
+                <div className="text-white font-bold text-2xl sm:text-3xl">Offer Now!</div>
             </div>
             <div className='flex flex-row place-items-center mb-6 w-3/4'>
                 <div className="flex flex-col">
                     <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-500 text-white text-xl font-bold rounded-full'>1</div>
-                    <div className="text-sm text-white">Contact Information</div>
+                    <div className="text-sm text-black">Contact Information</div>
                 </div>
                 <div className='flex flex-col w-full h-px bg-blue-500 mx-8'></div>
                 <div className="flex flex-col">
                     <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-500 text-white text-xl font-bold rounded-full'>2</div>
-                    <div className="text-sm text-white">Property Details</div>
+                    <div className="text-sm text-black">Property Details</div>
                 </div>
                 
             </div>
