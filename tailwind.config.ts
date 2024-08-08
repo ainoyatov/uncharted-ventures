@@ -10,6 +10,8 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      'exs': '300px',
+      'mxs': '400px',
       'xs': '475px',
       'ml': '900px',
       '3xl': '1537px',

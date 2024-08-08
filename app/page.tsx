@@ -73,7 +73,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col py-6 lg:py-16">
+      <div className="flex flex-col py-12 lg:py-16">
           
           <div className="flex w-full justify-center text-2xl">
             Excellent
@@ -101,7 +101,7 @@ export default async function Home() {
 
       </div>
       
-      <div className='overflow-x-scroll overscroll-none w-[300px] xs:w-[465px] sm:w-[630px] md:w-[758px] lg:w-[1000px] xl:w-[1270px] 2xl:w-[1526px]'>   
+      <div className='pb-4 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[1000px] xl:w-[1270px] 2xl:w-[1526px]'>   
         <div className='flex flex-row gap-4'>
           {reviews.map((review:any, index:number) => (
               review.text.length > 0 ? (
@@ -120,6 +120,12 @@ export default async function Home() {
           </div>
       </div>
       
+      <div className="flex flex-col p-2 py-16 space-y-4">
+        <div className="flex w-full justify-center text-xl font-bold p-2">We Buy Houses In 3 Easy Steps</div>
+        <div className="flex w-full justify-center px-10 md:px-32 text-center">
+          <p>We help property owners get out of properties from just needting to sell their house fast to upside down in debt and on the verge of losing the property. Many people think that the situation they are currently in is inescapable, but that is not always true. We can help YOU:</p>
+        </div>
+      </div>
 
       <div className="m-16 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
