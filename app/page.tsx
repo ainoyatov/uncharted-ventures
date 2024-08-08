@@ -1,9 +1,18 @@
 import Image from "next/image";
 import ContactFormMobile from '@/components/contact-forms/contactFormMobile'
 import ContactFormDesktop from "@/components/contact-forms/contactFormDesktop";
-import { Icon, IconifyIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
+import GoogleReviews from '@/components/google/reviews'
 
-export default function Home() {
+export default async function Home() {
+
+  const placeID = process.env.PLACE_ID
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+  const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&fields=reviews&reviews_sort=newest&key=${apiKey}`)
+  const data = await response.json()
+  const reviews = data.result.reviews.map((review:any) => review)
+
+
   return (
     <main className="flex min-h-screen flex-col items-center py-4 md:p-0 lg:p-4 ">
       <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center p-4">
@@ -35,7 +44,7 @@ export default function Home() {
       </div>
       
       <div className="flex flex-col place-items-center md:hidden bg-image-top bg-contain bg-center">
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col p-4 py-8">
           <div className="flex flex-row flex-wrap">
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
@@ -63,6 +72,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-col py-6 lg:py-16">
+          
+          <div className="flex w-full justify-center text-2xl">
+            Excellent
+          </div>
+
+          <div className="flex flex-row w-full justify-center pb-2">
+            <Icon icon="noto:star" width="24" height="24"/>
+            <Icon icon="noto:star" width="24" height="24"/>
+            <Icon icon="noto:star" width="24" height="24"/>
+            <Icon icon="noto:star" width="24" height="24"/>
+            <Icon icon="noto:star" width="24" height="24"/>
+          </div>
+          
+          <div className="flex w-full justify-center font-light text-[10px] pb-2">
+            Based on <span className="font-bold px-1">67 Reviews</span>
+          </div>
+          <div className="flex w-full justify-center pb-2">
+            <Image 
+              src='/google-logo.svg'
+              alt="Google review logo"
+              width={90}
+              height={90}
+            />
+          </div>
+
+      </div>
+      
+      <div className='overflow-x-scroll overscroll-none w-[300px] xs:w-[465px] sm:w-[630px] md:w-[758px] lg:w-[1000px] xl:w-[1270px] 2xl:w-[1526px]'>   
+        <div className='flex flex-row gap-4'>
+          {reviews.map((review:any, index:number) => (
+              review.text.length > 0 ? (
+                <div key={index} className="relative aspect-square h-[28vh] max-h-[275px] w-2/3 max-w-[475px] flex-none md:w-1/3 ">
+                  <GoogleReviews 
+                    reviews={review.text}
+                    authors={review.author_name}
+                    reviewTime={review.time}
+                    pictures={review.profile_photo_url}
+                    index={index}
+                  />
+                </div>
+              ) : null
+            ))
+          }
+          </div>
+      </div>
+      
 
       <div className="m-16 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
