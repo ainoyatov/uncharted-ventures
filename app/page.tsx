@@ -121,8 +121,34 @@ export default async function Home() {
       </div>
       
       <div className="flex flex-col p-2 py-16 space-y-4">
-        <div className="flex w-full justify-center text-xl font-bold p-2">We Buy Houses In 3 Easy Steps</div>
-        <div className="flex w-full justify-center px-10 md:px-32 text-center">
+        <div className="flex w-full justify-center text-xl font-bold p-2 lg:text-2xl">We Buy Houses In 3 Easy Steps</div>
+        <div className="flex flex-row justify-center place-items-center">
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon icon="meteocons:star-fill" width={48} height={48}/>
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+        </div>
+        
+        <div className="flex w-full justify-center px-10 md:px-32 text-center leading-loose">
           <p>We help property owners get out of properties from just needting to sell their house fast to upside down in debt and on the verge of losing the property. Many people think that the situation they are currently in is inescapable, but that is not always true. We can help YOU:</p>
         </div>
       </div>
