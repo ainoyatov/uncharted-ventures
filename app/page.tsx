@@ -121,7 +121,10 @@ export default async function Home() {
       </div>
       
       <div className="flex flex-col p-2 py-16 space-y-4">
-        <div className="flex w-full justify-center text-xl font-bold p-2 lg:text-2xl">We Buy Houses In 3 Easy Steps</div>
+        <div className="flex flex-col sm:flex-row justify-center">
+          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl px-2">We Buy Houses</div>
+          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl">In 3 Easy Steps</div>
+        </div>
         <div className="flex flex-row justify-center place-items-center">
           <div>
             <Icon 
@@ -148,79 +151,94 @@ export default async function Home() {
           </div>
         </div>
         
-        <div className="flex w-full justify-center px-10 md:px-32 text-center leading-loose">
+        <div className="flex w-full justify-center px-8 md:px-32 text-center leading-loose lg:max-w-[1000px]">
           <p>We help property owners get out of properties from just needting to sell their house fast to upside down in debt and on the verge of losing the property. Many people think that the situation they are currently in is inescapable, but that is not always true. We can help YOU:</p>
         </div>
       </div>
 
-      <div className="m-16 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="flex justify-center p-6">
+            <Icon 
+              icon="emojione:house-with-garden"
+              width={96}
+              height={96}
+            />
+          </div>
           <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
+            REACH OUT{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+            Fill out the form online, call or text, and we will get your property details
           </p>
         </a>
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="flex justify-center p-4">
+            <Icon 
+              icon="emojione-v1:document"
+              width={96}
+              height={96}
+            />
+          </div>
           <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
+            RECEIVE OFFER{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+            We will review your property details, and get you a fair cash offer or other types of offers that will work best for your specific situation.
           </p>
         </a>
 
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="flex justify-center p-4">
+            <Icon 
+              icon="streamline-emojis:dollar-banknote"
+              width={96}
+              height={96}
+            />
+          </div>
           <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
+            GET FUNDS{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
+            We will close this quickly and get you paid so you can move on with your life.
           </p>
         </a>
+      </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl">
+        <div className="p-1 m-2 ml-4 rounded-full bg-white">
+          <Icon 
+            icon="flat-color-icons:cell-phone"
+            width={20}
+            height={20}
+          />
+        </div>
+        <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
       </div>
     </main>
   );
