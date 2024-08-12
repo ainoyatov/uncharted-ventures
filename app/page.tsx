@@ -14,7 +14,7 @@ export default async function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center py-4 md:p-0 lg:p-4 ">
+    <main className="flex min-h-screen flex-col items-center py-4 md:p-0 ">
       <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center p-4">
         <p className="fixed lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Uncharted Ventures&nbsp;
@@ -22,15 +22,7 @@ export default async function Home() {
         </p>
       </div>
 
-      <div className="relative max-md:hidden flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-          src="/modern-condo.jpeg"
-          alt="Next.js Logo"
-          width={3480}
-          height={100}
-          priority
-        />
+      <div className="bg-image-main w-full md:h-[60vh] ml:h-[70vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[100vh]   bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
@@ -43,30 +35,30 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col place-items-center md:hidden bg-image-top bg-contain bg-center">
+      <div className="flex flex-col place-items-center md:hidden bg-image-bottom bg-no-repeat ">
         <div className="flex flex-col p-4 py-8">
           <div className="flex flex-row flex-wrap">
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
-            <div className="animate-bounce p-2 bg-gradient-to-t from-slate-500 via-blue-400 to-orange-600 bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
+            <div className="animate-bounce p-2 bg-gradient-to-t from-red-600 via-white to-slate-600 bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
           </div>
           <div className="p-2  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl ">Fast For Cash!</div>
           
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
-            <Icon icon="game-icons:check-mark"/>
-            <div className=" text-xl text-blue-700">Top Dollar Cash Offer</div>  
+            <Icon icon="game-icons:check-mark" color="orange"/>
+            <div className=" text-xl text-blue-700 dark:text-white">Top Dollar Cash Offer</div>  
           </div>
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
-            <Icon icon="game-icons:check-mark"/>
-            <div className="text-blue-700 text-xl">Close Within 10 Days</div>  
+            <Icon icon="game-icons:check-mark" color="orange"/>
+            <div className="text-blue-700 text-xl dark:text-white">Close Within 10 Days</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
-            <Icon icon="game-icons:check-mark"/>
-            <div className="text-blue-700 text-xl">Sell In Any Condition</div>  
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center ">
+            <Icon icon="game-icons:check-mark" color="orange"/>
+            <div className="text-blue-700 text-xl dark:text-white">Sell In Any Condition</div>  
           </div>
           
         </div>
-        <div className="bg-image-main bg-cover">
+        <div className="">
           <div className="">
             <ContactFormMobile />
           </div>
@@ -101,7 +93,7 @@ export default async function Home() {
 
       </div>
       
-      <div className='pb-4 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[1000px] xl:w-[1270px] 2xl:w-[1526px]'>   
+      <div className='pb-4 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
         <div className='flex flex-row gap-4'>
           {reviews.map((review:any, index:number) => (
               review.text.length > 0 ? (
@@ -240,6 +232,7 @@ export default async function Home() {
         </div>
         <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
       </div>
+
     </main>
   );
 }

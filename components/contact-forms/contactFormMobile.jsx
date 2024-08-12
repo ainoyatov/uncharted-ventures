@@ -19,8 +19,8 @@ const ContactFormMobile = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center backdrop-blur-sm'>
             <div className='flex max-xs:flex-col py-4 xs:py-8'>
-                <div className="text-white font-bold text-2xl sm:text-3xl px-2">Get Free No-Obligation</div>
-                <div className="text-white font-bold text-2xl sm:text-3xl max-xs:px-2">Offer Now!</div>
+                <div className="text-black dark:text-white font-bold text-2xl sm:text-3xl px-2">Get Free No-Obligation</div>
+                <div className="text-blue-400 font-bold text-2xl sm:text-3xl max-xs:px-2">Offer Now!</div>
             </div>
             <div className='flex flex-row place-items-center mb-6 w-3/4'>
                 <div className="flex flex-col">
@@ -130,7 +130,7 @@ const ContactFormMobile = () => {
                 <div>
                     <label
                         htmlFor="remember"
-                        className="ms-2 text-sm font-medium text-slate-50 md:text-slate-200 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
+                        className="ms-2 text-sm font-medium text-black md:text-slate-200 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
                     </label>
                 </div>
             </div>
