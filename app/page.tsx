@@ -233,12 +233,12 @@ export default async function Home() {
         <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
       </div>
 
-      <div className="flex flex-col w-full py-16 bg-image-grid-options bg-cover bg-bottom md:bg-image-grid-options md:bg-cover md:bg-no-repeat md:my-16 md:bg-bottom md:h-[60vh] xl:h-[80vh] justify-center items-center">
+      <div className="flex flex-col w-full py-16 bg-image-grid-options bg-cover bg-bottom md:bg-image-grid-options md:bg-cover md:bg-no-repeat  md:bg-bottom md:h-[75vh] lg:h-[85vh] justify-center items-center">
         <div className="flex flex-col m-2 md:m-8 max-w-[900px] max-md:hidden">
-          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center xl:text-4xl">
+          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center lg:text-4xl">
             Looking To Sell Your House Fast For Cash? 
           </p>
-          <p className="flex text-[32px] font-bold px-4 md:text-white md:px-8 justify-center xl:text-4xl">
+          <p className="flex text-[32px] font-bold px-4 md:text-white  justify-center lg:text-4xl">
             We Provide Solutions For All Situations
           </p>
         </div>
@@ -247,7 +247,7 @@ export default async function Home() {
           <p>Looking To Sell Your House Fast For Cash? We Provide Solutions For All Situations</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-y-4 p-4 md:grid-cols-3 md:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
+        <div className="grid grid-cols-1 gap-y-4 p-4 xs:grid-cols-2 md:grid-cols-3 xs:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
               <div className="flex flex-row space-x-2 py-2">
                 <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
@@ -327,14 +327,31 @@ export default async function Home() {
               Are you an absentee home owner with a vacant property?
             </p>
           </div>
+        </div>
 
+        <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl">
+          <div className="p-1 m-2 ml-4 rounded-full bg-white">
+            <Icon 
+              icon="flat-color-icons:cell-phone"
+              width={20}
+              height={20}
+            />
+          </div>
+          <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
         </div>
       </div>
 
+      <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl">
+        <p>No Commission</p>
+        <p>No Hidden Charges</p>
+        <button className="bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl">
+          <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
+          Free Cash Offer
+        </button>
+      </div>
     </main>
   );
 }
-
 
       
 
