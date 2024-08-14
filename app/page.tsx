@@ -22,7 +22,7 @@ export default async function Home() {
         </p>
       </div>
 
-      <div className="bg-image-main w-full md:h-[60vh] ml:h-[70vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[100vh] bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
+      <div className="bg-image-main w-full md:h-[50vh] ml:h-[60vh] lg:h-[70vh] xl:h-[90vh] 2xl:h-[100vh] bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
@@ -148,8 +148,8 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4">
-        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+      <div className="grid max-lg:space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 p-4">
+        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-6">
             <Icon 
               icon="emojione:house-with-garden"
@@ -168,7 +168,7 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="emojione-v1:document"
@@ -187,7 +187,7 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="streamline-emojis:dollar-banknote"
@@ -218,12 +218,12 @@ export default async function Home() {
         <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
       </div>
 
-      <div className="flex flex-col w-full py-16 bg-image-grid-options bg-cover bg-bottom md:bg-image-grid-options md:bg-cover md:bg-no-repeat  md:bg-bottom md:h-[75vh] lg:h-[85vh] justify-center items-center">
+      <div className="flex flex-col w-full  bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  md:bg-bottom md:h-[50vh] ml:h-[55vh] lg:h-[60vh]  justify-center  items-center">
         <div className="flex flex-col m-2 md:m-8 max-w-[900px] max-md:hidden">
-          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center lg:text-4xl">
+          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center lg:text-[36px]">
             Looking To Sell Your House Fast For Cash? 
           </p>
-          <p className="flex text-[32px] font-bold px-4 md:text-white  justify-center lg:text-4xl">
+          <p className="flex text-[32px] font-bold px-4 md:text-white  justify-center lg:text-[36px]">
             We Provide Solutions For All Situations
           </p>
         </div>
@@ -326,7 +326,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl">
+      <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl dark:border-t dark:border-b">
         <p>No Commission</p>
         <p>No Hidden Charges</p>
         <button className="bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl">
@@ -373,7 +373,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 py-8">
+      <div className="grid max-lg:space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 py-8 p-4">
         <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-6">
             <Icon 
@@ -393,7 +393,7 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="fa6-solid:people-group"
@@ -412,7 +412,7 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="emojione-monotone:timer-clock"
