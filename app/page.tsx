@@ -22,7 +22,7 @@ export default async function Home() {
         </p>
       </div>
 
-      <div className="bg-image-main w-full md:h-[60vh] ml:h-[70vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[100vh]   bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
+      <div className="bg-image-main w-full md:h-[60vh] ml:h-[70vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[100vh] bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
@@ -150,7 +150,7 @@ export default async function Home() {
 
       <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href=""
           className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -174,7 +174,7 @@ export default async function Home() {
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href=""
           className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -198,7 +198,7 @@ export default async function Home() {
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href=""
           className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -231,6 +231,135 @@ export default async function Home() {
           />
         </div>
         <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
+      </div>
+
+      <div className="flex flex-col w-full py-16 md:bg-image-grid-options md:bg-cover md:bg-no-repeat md:my-16 md:bg-bottom md:h-[60vh] xl:h-[80vh] justify-center items-center">
+        <div className="flex flex-col m-2 md:m-8 max-w-[900px] max-md:hidden">
+          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center xl:text-4xl">
+            Looking To Sell Your House Fast For Cash? 
+          </p>
+          <p className="flex text-[32px] font-bold px-4 md:text-white md:px-8 justify-center xl:text-4xl">
+            We Provide Solutions For All Situations
+          </p>
+        </div>
+
+        <div className="flex w-full text-center p-2 mxs:p-4 max-w-[900px] text-[32px] md:hidden">
+          <p>Looking To Sell Your House Fast For Cash? We Provide Solutions For All Situations</p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-y-4 p-4 md:grid-cols-3 md:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
+          <a
+              href=""
+              className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex flex-row space-x-2 py-2">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                  <Icon icon="game-icons:check-mark" color="white"/>
+                </div>
+                <h2 className="text-xl font-semibold md:text-white">
+                  Pre-Foreclosure
+                </h2>
+              </div>
+              <p className="m-0 max-w-[30ch] text-sm md:text-white">
+                Are you behind on mortgage payments?
+              </p>
+            </a>
+
+          <a
+            href=""
+            className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold md:text-white">
+                Pre-Foreclosure
+              </h2>
+            </div>
+            <p className="m-0 max-w-[30ch] text-sm md:text-white">
+              Are you behind on mortgage payments?
+            </p>
+          </a>
+          
+          <a
+            href=""
+            className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold md:text-white">
+                Tax Default
+              </h2>
+            </div>
+            <p className="m-0 max-w-[30ch] text-sm  md:text-white">
+              Are you behind on property taxes?
+            </p>
+          </a>
+          <a
+            href=""
+            className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold md:text-white">
+                Divorced
+              </h2>
+            </div>
+            <p className="m-0 max-w-[30ch] text-sm  md:text-white">
+              Have you been recently divorced?
+            </p>
+          </a>
+          <a
+            href=""
+            className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold md:text-white">
+                Inherited
+              </h2>
+            </div>
+            <p className="m-0 max-w-[30ch]  text-sm  md:text-white">
+              Were you passed down a home that is a burden?
+            </p>
+          </a>
+          <a
+            href=""
+            className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold md:text-white">
+                Vacant
+              </h2>
+            </div>
+            <p className="m-0 max-w-[30ch] text-sm  md:text-white ">
+              Are you an absentee home owner with a vacant property?
+            </p>
+          </a>
+
+        </div>
       </div>
 
     </main>

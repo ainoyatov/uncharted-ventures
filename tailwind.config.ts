@@ -24,6 +24,7 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "image-main": "url('/modern-condo.jpeg')",
         "image-bottom": "url('/spectrum-background.svg')",
+        "image-grid-options": "url('/homes-background.jpg')",
       },
       backgroundSize: {
         "custom-image-main": '200%'
