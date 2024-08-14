@@ -149,12 +149,7 @@ export default async function Home() {
       </div>
 
       <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4">
-        <a
-          href=""
-          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-6">
             <Icon 
               icon="emojione:house-with-garden"
@@ -171,14 +166,9 @@ export default async function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
             Fill out the form online, call or text, and we will get your property details
           </p>
-        </a>
+        </div>
 
-        <a
-          href=""
-          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="emojione-v1:document"
@@ -195,14 +185,9 @@ export default async function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
             We will review your property details, and get you a fair cash offer or other types of offers that will work best for your specific situation.
           </p>
-        </a>
+        </div>
 
-        <a
-          href=""
-          className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
               icon="streamline-emojis:dollar-banknote"
@@ -219,7 +204,7 @@ export default async function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
             We will close this quickly and get you paid so you can move on with your life.
           </p>
-        </a>
+        </div>
       </div>
 
       <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl">
@@ -349,6 +334,106 @@ export default async function Home() {
           Free Cash Offer
         </button>
       </div>
+
+      <div className="flex flex-col p-2 pb-8 pt-16 space-y-4">
+        <div className="flex flex-col sm:flex-row justify-center">
+          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl px-2">Why Work</div>
+          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl">With Us</div>
+        </div>
+        <div className="flex flex-row justify-center place-items-center">
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon icon="meteocons:star-fill" width={48} height={48}/>
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+        </div>
+        
+        <div className="flex w-full justify-center px-8 md:px-32 text-center leading-loose lg:max-w-[1000px]">
+          <p>We are committed to providing top tier service to every customer. 
+            You can trust <span className="font-bold">Uncharted Ventures</span> to give you the BEST offer to purchase your house.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 py-8">
+        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="flex justify-center p-6">
+            <Icon 
+              icon="mdi:cash-fast"
+              width={96}
+              height={96}
+            />
+          </div>
+          <h2 className="mb-3 text-2xl font-semibold">
+            FAST CASH PAYMENT{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            Need a fast house sale? We can close in less than 14-30 days. Get your cash offer today!
+          </p>
+        </div>
+
+        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="flex justify-center p-4">
+            <Icon 
+              icon="fa6-solid:people-group"
+              width={96}
+              height={96}
+            />
+          </div>
+          <h2 className="mb-3 text-2xl font-semibold">
+            USA-BASED TEAM{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            With a team based in USA, we can offer a fair and honest assessment of the house 
+            ensuring that you receive the highest offer for your home.
+          </p>
+        </div>
+
+        <div className="group shadow-lg rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="flex justify-center p-4">
+            <Icon 
+              icon="emojione-monotone:timer-clock"
+              width={96}
+              height={96}
+            />
+          </div>
+          <h2 className="mb-3 text-2xl font-semibold">
+            WE DELIVER ON TIME{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            Unlike our competitors we don't need to rely on finding a suitable buyer, so we deliver
+            on our promise of delivering funds on the agreed date.
+          </p>
+        </div>
+      </div>
+
     </main>
   );
 }
