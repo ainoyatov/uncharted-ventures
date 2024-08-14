@@ -408,8 +408,7 @@ export default async function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            With a team based in USA, we can offer a fair and honest assessment of the house 
-            ensuring that you receive the highest offer for your home.
+            With a team based in USA, we can offer a fair and honest assessment of the house ensuring that you receive the highest offer for your home.
           </p>
         </div>
 
@@ -428,8 +427,7 @@ export default async function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Unlike our competitors we don't need to rely on finding a suitable buyer, so we deliver
-            on our promise of delivering funds on the agreed date.
+            Unlike our competitors we do not need to rely on finding a suitable buyer, so we deliver on our promise of delivering funds on the agreed date.
           </p>
         </div>
       </div>
