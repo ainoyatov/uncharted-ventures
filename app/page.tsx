@@ -150,7 +150,7 @@ export default async function Home() {
 
       <div className="grid max-lg:space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 p-4">
         <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <div className="flex justify-center p-6">
+          <div className="flex justify-center p-4">
             <Icon 
               icon="emojione:house-with-garden"
               width={96}
@@ -374,8 +374,8 @@ export default async function Home() {
       </div>
 
       <div className="grid max-lg:space-y-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:space-x-4 py-8 p-4">
-        <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <div className="flex justify-center p-6">
+        <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="flex justify-center p-4">
             <Icon 
               icon="mdi:cash-fast"
               width={96}
@@ -421,7 +421,7 @@ export default async function Home() {
             />
           </div>
           <h2 className="mb-3 text-2xl font-semibold">
-            WE DELIVER ON TIME{" "}
+            DELIVER ON TIME{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
