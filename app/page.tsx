@@ -22,7 +22,7 @@ export default async function Home() {
         </p>
       </div>
 
-      <div className="bg-image-main w-full md:h-[50vh] ml:h-[60vh] lg:h-[70vh] xl:h-[90vh] 2xl:h-[100vh] bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
+      <div className="bg-image-main w-full min-h-screen bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
@@ -207,7 +207,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl">
+      <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500">
         <div className="p-1 m-2 ml-4 rounded-full bg-white">
           <Icon 
             icon="flat-color-icons:cell-phone"
@@ -218,7 +218,7 @@ export default async function Home() {
         <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Me Today: 602-566-3816</button>
       </div>
 
-      <div className="flex flex-col w-full  bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  md:bg-bottom md:h-[50vh] ml:h-[55vh] lg:h-[60vh]  justify-center  items-center">
+      <div className="flex flex-col  w-full bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  lg:h-1/2 justify-center items-center">
         <div className="flex flex-col m-2 md:m-8 max-w-[900px] max-md:hidden">
           <p className="flex text-[32px] font-bold px-4 md:text-white justify-center lg:text-[36px]">
             Looking To Sell Your House Fast For Cash? 
@@ -232,7 +232,7 @@ export default async function Home() {
           <p>Looking To Sell Your House Fast For Cash? We Provide Solutions For All Situations</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-y-4 p-4 xs:grid-cols-2 md:grid-cols-3 xs:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
+        <div className="grid grid-cols-1 gap-y-4 px-4 xs:grid-cols-2 md:grid-cols-3 xs:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
               <div className="flex flex-row space-x-2 py-2">
                 <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
@@ -274,7 +274,14 @@ export default async function Home() {
             </p>
           </div>
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-            
+            <div className="flex flex-row space-x-2 py-2">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <Icon icon="game-icons:check-mark" color="white"/>
+              </div>
+              <h2 className="text-xl font-semibold text-white">
+                Divorced
+              </h2>
+            </div>
             <p className="m-0 max-w-[30ch] text-sm  text-white">
               Have you been recently divorced?
             </p>
@@ -307,7 +314,7 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl">
+        <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500">
           <div className="p-1 m-2 ml-4 rounded-full bg-white">
             <Icon 
               icon="flat-color-icons:cell-phone"
@@ -322,7 +329,7 @@ export default async function Home() {
       <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl dark:border-t dark:border-b">
         <p>No Commission</p>
         <p>No Hidden Charges</p>
-        <button className="bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl">
+        <button className="bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
           <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
           Free Cash Offer
         </button>
@@ -425,8 +432,8 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row md:justify-center gap-4 xl:gap-8 w-full py-8">
-        <div className="flex flex-col text-3xl text-white font-thin p-4 bg-blue-500">
+      <div className="flex flex-col p-4 md:flex-row md:justify-center gap-4 xl:gap-8 w-full py-8">
+        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
             <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
               <Icon icon="game-icons:check-mark" color="white"/>
@@ -459,7 +466,7 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col text-3xl text-white font-thin p-4 bg-blue-500">
+        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
             <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
               <Icon icon="dashicons:no-alt" color="white"/>
