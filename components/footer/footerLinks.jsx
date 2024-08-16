@@ -25,14 +25,6 @@ const Footer = () => {
                         All rights reserved &copy;
                     </p>
 
-                    <div>
-                        {/* {storeOpen ? (
-                            <p className="text-xl text-gray-500">Store is <span className="text-green-500">OPEN</span></p>
-                        ) : (
-                            <p className="text-xl text-gray-500">Store is <span className="text-red-500">CLOSED</span></p>
-                        )} */}
-                    </div>
-
                 </div>
 
                 <div className="flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20">
@@ -60,10 +52,10 @@ const Footer = () => {
                                     {
                                         link.links.map((item) => (
                                             <Link
-                                            key={item.title}
-                                            href={item.url}
-                                            className="text-gray-500"
-                                            target="_blank"
+                                                key={item.title}
+                                                href={item.url}
+                                                className="text-gray-500"
+                                                target="_blank"
                                             >
                                                 {item.title}
                                             </Link>
