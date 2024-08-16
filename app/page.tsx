@@ -329,9 +329,9 @@ export default async function Home() {
       <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl dark:border-t dark:border-b">
         <p>No Commission</p>
         <p>No Hidden Charges</p>
-        <button className="bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
+        <button className="bg-orange-400 rounded-xl text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
           <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
-          Free Cash Offer
+          <p>Free Cash Offer</p>
         </button>
       </div>
 
@@ -499,6 +499,11 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
+      <button className=" bg-orange-400 transition-transform  transform hover:scale-110 rounded-xl text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
+          <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
+          <p>Free Cash Offer</p>
+      </button>
 
     </main>
   );
