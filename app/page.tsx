@@ -207,7 +207,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500">
+      <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500 cursor-pointer transition-transform transform hover:scale-125">
         <div className="p-1 m-2 ml-4 rounded-full bg-white">
           <Icon 
             icon="flat-color-icons:cell-phone"
@@ -314,7 +314,7 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500">
+        <div className="flex flex-row my-8 place-items-center bg-blue-400 rounded-xl hover:bg-blue-500 cursor-pointer transition-transform transform hover:scale-125">
           <div className="p-1 m-2 ml-4 rounded-full bg-white">
             <Icon 
               icon="flat-color-icons:cell-phone"
@@ -329,7 +329,7 @@ export default async function Home() {
       <div className="flex flex-col py-4 gap-2 bg-black w-full text-orange-400 items-center text-3xl dark:border-t dark:border-b">
         <p>No Commission</p>
         <p>No Hidden Charges</p>
-        <button className="bg-orange-400 rounded-xl text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
+        <button className="cursor-pointer transition-transform transform hover:scale-125 bg-orange-400 rounded-xl text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
           <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
           <p>Free Cash Offer</p>
         </button>
@@ -433,7 +433,7 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col p-4 md:flex-row md:justify-center gap-4 xl:gap-8 w-full py-8">
-        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500">
+        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500 rounded-xl">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
             <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
               <Icon icon="game-icons:check-mark" color="white"/>
@@ -466,7 +466,7 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500">
+        <div className="flex flex-col text-lg md:text-lg ml:text-xl text-white font-normal md:font-thin p-4 bg-blue-500 rounded-xl">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
             <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
               <Icon icon="dashicons:no-alt" color="white"/>
@@ -500,7 +500,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <button className=" bg-orange-400 transition-transform  transform hover:scale-110 rounded-xl text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
+      <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-xl bg-orange-400 text-black my-2 flex flex-row items-center p-2 text-xl hover:bg-orange-500">
           <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
           <p>Free Cash Offer</p>
       </button>
