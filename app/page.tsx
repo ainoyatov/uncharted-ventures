@@ -274,14 +274,7 @@ export default async function Home() {
             </p>
           </div>
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-            <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
-                <Icon icon="game-icons:check-mark" color="white"/>
-              </div>
-              <h2 className="text-xl font-semibold text-white">
-                Divorced
-              </h2>
-            </div>
+            
             <p className="m-0 max-w-[30ch] text-sm  text-white">
               Have you been recently divorced?
             </p>
@@ -429,6 +422,74 @@ export default async function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
             Unlike our competitors we do not need to rely on finding a suitable buyer, so we deliver on our promise of delivering funds on the agreed date.
           </p>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row md:justify-center gap-4 xl:gap-8 w-full py-8">
+        <div className="flex flex-col text-3xl text-white font-thin p-4 bg-blue-500">
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
+              <Icon icon="game-icons:check-mark" color="white"/>
+            </div>
+            <p>We buy properties in any condition</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
+              <Icon icon="game-icons:check-mark" color="white"/>
+            </div>
+            <p>Get an offer within 72 hours</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
+              <Icon icon="game-icons:check-mark" color="white"/>
+            </div>
+            <p>Quick and easy sale</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-green-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
+              <Icon icon="game-icons:check-mark" color="white"/>
+            </div>
+            <p>Personalised service</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-2 items-center">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-green-500">
+              <Icon icon="game-icons:check-mark" color="white"/>
+            </div>
+            <p>Receive a free home evaluation</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-3xl text-white font-thin p-4 bg-blue-500">
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
+              <Icon icon="dashicons:no-alt" color="white"/>
+            </div>
+            <p>No repairs or cleaning required</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
+              <Icon icon="dashicons:no-alt" color="white"/>
+            </div>
+            <p>No obligations</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
+              <Icon icon="dashicons:no-alt" color="white"/>
+            </div>
+            <p>No listings or for sale boards</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center border-b-2 border-b-red-500">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
+              <Icon icon="dashicons:no-alt" color="white"/>
+            </div>
+            <p>No waiting months for a buyer</p>
+          </div>
+          <div className="flex flex-row space-x-4 py-4 items-center ">
+            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-red-500">
+              <Icon icon="dashicons:no-alt" color="white"/>
+            </div>
+            <p>No fees or commissions charged</p>
+          </div>
         </div>
       </div>
 
