@@ -4,7 +4,7 @@ export const headerLinks = [
     {href: "/how-it-works", label: "How It Works"},
     {href: "/faq", label: "FAQ"},
     {href: "/contact-us", label: "Contact Us"},
-]
+];
 
 
 export const footerLinks = [
@@ -12,8 +12,9 @@ export const footerLinks = [
         title: "About",
         links: [
             {title: "Home", url: "/"},
+            {title: "About Us", url: "/about-us"},
             {title: "How It Works", url: "/how-it-works"},
-            {title: "FAQ", url: "/faq"},
+            
         ]
     },
     {

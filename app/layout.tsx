@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="lg:pt-12 flex flex-row justify-center  md:ml-0">
+        <div className="lg:pt-12 flex flex-row justify-center md:ml-0">
           <HeaderMenu />
         </div>
         <Suspense>

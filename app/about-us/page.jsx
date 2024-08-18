@@ -4,7 +4,7 @@ const AboutUs = () => {
 
     return (
         <div className="flex flex-col p-4 mt-8 md:mt-0 md:p-8">
-            <div className="text-2xl mb-4">About Us</div>
+            <div className="text-2xl md:text-3xl text-blue-500 flex w-full justify-center mb-4">About Us</div>
             <div className="mb-2">
                 At Uncharted Ventures LLC, we understand that buying or selling a home is more than just a 
                 transaction—it is a life-changing experience. With years of experience in the real estate market, 
