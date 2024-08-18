@@ -103,7 +103,7 @@ const ContactUsForm = () => {
                 Any questions? Just write us a message!
             </div>
             
-            <div className="shadow-2xl bg-white self-center w-[1196px] max-w-full mt-14 pl-2.5 pr-12 py-2.5 rounded-xl max-md:mt-10 max-md:pr-5">
+            <div className="shadow-2xl bg-white self-center w-[1196px] max-w-full m-14 pl-2.5 pr-12 py-2.5 rounded-xl max-md:mt-10 max-md:pr-5">
                 <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                     <div className="flex items-stretch w-[45%] max-md:w-full max-md:ml-0 mr-4">
                         
@@ -155,7 +155,7 @@ const ContactUsForm = () => {
                      
                     </div>
                     
-                    <div className="flex flex-col items-stretch w-[55%] ml-5 max-md:w-full max-md:ml-0">
+                    <div className="flex flex-col items-stretch w-[55%] ml-8 max-md:w-full max-md:ml-0">
                         <div className="flex flex-col mt-14 max-md:max-w-full max-md:mt-10">
                             <div className="self-stretch max-md:max-w-full">
                                 <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
