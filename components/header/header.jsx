@@ -6,7 +6,7 @@ import {headerLinks} from "@/constants"
 const HeaderMenu = () => {
 
     return (
-        <div className="flex min-h-auto flex-row justify-center lg:justify-between px-4 sm:mt-12 sm:mb-0 lg:mt-0 w-[1900px]">
+        <div className="flex min-h-auto flex-row justify-center lg:justify-between px-4 md:px-8 sm:mt-12 lg:mt-0 w-[1900px]">
             <a className="flex h-[75px] max-lg:hidden items-center" href="/">
                 <Image 
                     src="/google-logo.svg"
