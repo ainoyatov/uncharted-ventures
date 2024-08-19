@@ -534,10 +534,10 @@ export default async function Home() {
           </div>
         </div>
         <div className="flex w-full justify-center px-8 md:px-32 text-center leading-loose lg:max-w-[1000px]">
-          <p className="py-4 mb-4">Explore our frequently asked questions to find essential information on buying and selling homes, including tips, processes, and answers to common concerns, all aimed at making your real estate journey smooth and informed.</p>
+          <p className="p-2 py-4 mb-4">Explore our frequently asked questions to find essential information on buying and selling homes, including tips, processes, and answers to common concerns, all aimed at making your real estate journey smooth and informed.</p>
         </div>
         
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <FAQ />
         </div>
 

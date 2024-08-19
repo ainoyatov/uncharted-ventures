@@ -31,7 +31,7 @@ const FAQAccordion = () => {
   return (
     <div className="flex flex-col">
       {faqData.map((faq, index) => (
-        <div key={index} className="mb-4 border border-gray-300 rounded-xl shadow-xl sm:w-[450px]">
+        <div key={index} className="mb-4 border border-gray-300 rounded-xl shadow-xl max-w-[250px] xs:max-w-[270px]">
           <div
             className="bg-slate-100 rounded-xl px-2 xs:px-4 py-3 cursor-pointer font-bold flex justify-between items-center"
             onClick={() => toggleFAQ(index)}
