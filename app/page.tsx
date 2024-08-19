@@ -3,6 +3,7 @@ import ContactFormMobile from '@/components/contact-forms/contactFormMobile'
 import ContactFormDesktop from "@/components/contact-forms/contactFormDesktop";
 import { Icon } from "@iconify/react";
 import GoogleReviews from '@/components/google/reviews'
+import FAQ from '@/components/contact-forms/faq'
 
 export default async function Home() {
 
@@ -504,6 +505,43 @@ export default async function Home() {
           <Icon icon="noto:heavy-dollar-sign" width={24} height={24}/>
           <p>Free Cash Offer</p>
       </button>
+
+      <div className="p-2 py-16">
+        <div className="flex justify-center text-2xl font-bold mb-4">FAQ</div>
+        <div className="flex flex-row justify-center place-items-center">
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div className="flex">
+            <Icon icon="meteocons:star-fill" width={48} height={48}/>
+          </div>
+          <div className="flex">
+            <Icon 
+              icon="pajamas:dash" width={24} height={24}
+            />
+          </div>
+          <div>
+            <Icon 
+              icon="radix-icons:dash" width={24} height={24}
+            />
+          </div>
+        </div>
+        <div className="flex w-full justify-center px-8 md:px-32 text-center leading-loose lg:max-w-[1000px]">
+          <p className="py-4 mb-4">Explore our frequently asked questions to find essential information on buying and selling homes, including tips, processes, and answers to common concerns, all aimed at making your real estate journey smooth and informed.</p>
+        </div>
+        
+        <div className="flex justify-center">
+          <FAQ />
+        </div>
+
+      </div>
 
     </main>
   );

@@ -18,7 +18,7 @@ const HeaderMenu = () => {
             <div className="flex h-[75px] max-sm:hidden">
                 <ul className="flex justify-center items-center">
                     {headerLinks.map((links) => (
-                        <li key={links.label} className="p-2 text-xl lg:text-2xl text-left">
+                        <li key={links.label} className="p-2 text-xl lg:text-2xl text-left hover:scale-125">
                             <Link
                                 href={links.href}
                                 className="p-2"
