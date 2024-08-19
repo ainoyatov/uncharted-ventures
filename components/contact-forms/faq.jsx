@@ -7,7 +7,7 @@ const FAQAccordion = () => {
 
   const faqData = [
     {
-        question: 'Are there any hidden fees or any commission?',
+        question: 'Are there any hidden fees?',
         answer: 'No! We never have any hidden fees or commissions. This means more money in your pocket',
     },
     {
