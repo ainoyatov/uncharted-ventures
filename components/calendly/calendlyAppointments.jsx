@@ -1,6 +1,6 @@
 'use client';
 
-import { InlineWidget } from 'react-calendly'
+import { InlineWidget } from 'react-calendly';
 
 const CalendlyBooking = () => {
 
