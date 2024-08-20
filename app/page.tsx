@@ -216,7 +216,7 @@ export default async function Home() {
             height={20}
           />
         </div>
-        <button className="flex my-4 text-[16px] mr-4 text-white font-semibold">Call Us Today</button>
+        <button className="flex my-2 text-[16px] mr-4 text-white font-semibold">Call Us Today</button>
       </div>
 
       <div className="flex flex-col  w-full bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  lg:h-1/2 justify-center items-center">
@@ -433,7 +433,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col p-4 md:flex-row md:justify-center gap-4 xl:gap-8 w-full py-8">
+      <div className="flex flex-col p-4 md:flex-row md:justify-center gap-4 xl:gap-8  py-8">
         <div className="flex flex-col text-lg md:text-lg ml:text-xl  md:font-thin p-4">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
