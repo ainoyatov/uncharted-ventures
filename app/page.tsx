@@ -9,11 +9,17 @@ export default async function Home() {
 
   const placeID = process.env.PLACE_ID
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+
+  //Field = reviews
   const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&fields=reviews&reviews_sort=newest&key=${apiKey}`)
   const data = await response.json()
   const reviews = data.result.reviews.map((review:any) => review)
-
-
+  
+  //Field = user_ratings_total
+  const rsp = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&fields=user_ratings_total&key=${apiKey}`)
+  const dt = await rsp.json()
+  const totalUserReviews = dt.result.user_ratings_total
+  
   return (
     <main className="flex min-h-screen flex-col items-center md:p-0 ">
       <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center max-sm:py-8">
@@ -68,7 +74,7 @@ export default async function Home() {
 
       <div className="flex flex-col py-12 lg:py-16">
           
-          <div className="flex w-full justify-center text-2xl">
+          <div className="flex w-full justify-center text-4xl">
             Excellent
           </div>
 
@@ -81,7 +87,7 @@ export default async function Home() {
           </div>
           
           <div className="flex w-full justify-center font-light text-[10px] pb-2">
-            Based on <span className="font-bold px-1">67 Reviews</span>
+            Based on <span className="font-bold px-1">{totalUserReviews} Reviews</span>
           </div>
           <div className="flex w-full justify-center pb-2">
             <Image 
