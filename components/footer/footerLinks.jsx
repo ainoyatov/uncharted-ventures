@@ -1,10 +1,19 @@
 'use client';
 
 import { footerLinks, tosLinks, socialLinks } from "../../constants";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/');
+    }
+
+    const tosYear = new Date().getFullYear();
 
     return (
         <footer className="flex flex-col text-black-100 mt-5 border-t border-gray-100">
@@ -17,11 +26,11 @@ const Footer = () => {
                         height={35}
                         className="object-contain dark:invert"
                         priority
-                        // onClick={handleClick}
+                        onClick={handleClick}
                     />
 
                     <p className="text-base text-gray-500">
-                        Uncharted Ventures LLC 2024 <br />
+                        Uncharted Ventures LLC {tosYear} <br />
                         All rights reserved &copy;
                     </p>
 
@@ -70,7 +79,7 @@ const Footer = () => {
 
             <div className="flex max-md:flex-col justify-between items-center flex-wrap border-t border-gray-200 md:px-16 px-6 py-10 gap-5">
                 <div className="flex justified-start items-start">
-                    <p className=" text-gray-500">@2024 Uncharted Ventures LLC. All Rights Reserved.</p>
+                    <p className=" text-gray-500">@{tosYear} Uncharted Ventures LLC. All Rights Reserved.</p>
                 </div>
                 <div>
                     <ul>
