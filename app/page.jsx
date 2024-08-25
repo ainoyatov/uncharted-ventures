@@ -54,7 +54,7 @@ export default async function Home() {
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
             <div className="animate-bounce p-2 bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
           </div>
-          <div className="p-2  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl ">Fast For Cash!</div>
+          <div className="p-2 mb-4  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
           
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
@@ -62,9 +62,9 @@ export default async function Home() {
           </div>
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className=" text-xl bg-gradient-to-t bg-clip-text text-transparent from-white via-white to-orange-400">Close Within 10 Days</div>  
+            <div className=" text-xl bg-gradient-to-t bg-clip-text text-transparent from-white via-white to-orange-400 ">Close Within 10 Days</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center ">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className="bg-gradient-to-t bg-clip-text text-transparent from-white via-white to-orange-400 text-xl">Sell In Any Condition</div>  
           </div>
@@ -75,7 +75,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col py-12 lg:py-16">
+      <div className="flex flex-col py-24 lg:py-16">
           
           <div className="flex w-full justify-center text-4xl">
             Excellent
@@ -103,7 +103,7 @@ export default async function Home() {
 
       </div>
       
-      <div className='pb-4 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
+      <div className='pb-4 py-6 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
         <div className='flex flex-row gap-4'>
           {reviews.map((review, index) => (
               review.text.length > 0 ? (
@@ -122,7 +122,7 @@ export default async function Home() {
           </div>
       </div>
       
-      <div className="flex flex-col p-2 py-16 space-y-4">
+      <div className="flex flex-col p-2 py-24 space-y-4">
         <div className="flex flex-col sm:flex-row justify-center">
           <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl px-2">We Buy Houses</div>
           <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl">In 3 Easy Steps</div>
@@ -162,7 +162,7 @@ export default async function Home() {
         <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
-              icon="emojione:house-with-garden"
+              icon="fluent:person-home-16-filled"
               width={96}
               height={96}
             />
@@ -181,7 +181,7 @@ export default async function Home() {
         <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
-              icon="emojione-v1:document"
+              icon="fluent:person-edit-24-filled"
               width={96}
               height={96}
             />
@@ -200,7 +200,7 @@ export default async function Home() {
         <div className="group shadow-lg rounded-lg border  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <div className="flex justify-center p-4">
             <Icon 
-              icon="streamline-emojis:dollar-banknote"
+              icon="fluent:person-money-20-filled"
               width={96}
               height={96}
             />
@@ -324,7 +324,8 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-xl hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+
+        {/* <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-xl hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
           <div className="p-1 m-2 ml-4 rounded-full bg-white">
             <Icon 
               icon="flat-color-icons:cell-phone"
@@ -333,16 +334,17 @@ export default async function Home() {
             />
           </div>
           <button className="flex my-2 text-[16px] mr-4 text-white font-semibold">Call Us Today</button>
-        </div>
-      </div>
+        </div> */}
 
-      <div className="flex flex-col py-4 gap-2 bg-black w-full text-[#f4b400] items-center text-3xl dark:border-t dark:border-b">
-        <p>No Commission</p>
-        <p>No Hidden Charges</p>
-        <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-xl bg-blue-500 text-white my-2 flex flex-row p-2 gap-2 text-xl hover:bg-blue-700">
-          <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
-          <p>Free Cash Offer</p>
-      </button>
+        <div className="flex flex-col py-16 gap-2 w-full text-white items-center text-3xl">
+          <div className="flex mb-2 text-4xl md:text-5xl">No Commission</div>
+          <div className="flex mb-2 text-4xl md:text-5xl">No Hidden Charges</div>
+          <button className="flex flex-row my-8 p-2 gap-2 text-xl cursor-pointer  transition-transform  transform hover:scale-125 rounded-xl bg-blue-500 text-white  hover:bg-blue-700">
+            <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
+            <div className="flex">Free Cash Offer</div>
+          </button>
+        </div>
+
       </div>
 
       <div className="flex flex-col p-2 pb-8 pt-16 space-y-4">
