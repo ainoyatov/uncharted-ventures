@@ -33,8 +33,13 @@ export default async function Home() {
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
-            <h1 className="bg-gradient-to-r from-white via-orange-600 to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell Your House</h1>
-            <h1 className="bg-gradient-to-r from-white via-orange-600 to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
+            <div className="flex flex-row flex-wrap">
+              <h1 className="p-2 text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
+              <h1 className="p-2 text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
+              <h1 className="p-2 animate-bounce bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">House</h1>
+            </div>
+            
+            <h1 className="text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
             <ContactFormDesktop />
@@ -42,12 +47,12 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col place-items-center md:hidden bg-image-bottom bg-no-repeat ">
+      <div className="flex flex-col place-items-center md:hidden bg-image-main bg-no-repeat ">
         <div className="flex flex-col p-4 py-8">
           <div className="flex flex-row flex-wrap">
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
             <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
-            <div className="animate-bounce p-2 bg-gradient-to-t from-red-600 via-white to-slate-600 bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
+            <div className="animate-bounce p-2 bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
           </div>
           <div className="p-2  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl ">Fast For Cash!</div>
           
@@ -65,10 +70,8 @@ export default async function Home() {
           </div>
           
         </div>
-        <div className="">
-          <div className="">
-            <ContactFormMobile />
-          </div>
+        <div className="flex">
+          <ContactFormMobile />
         </div>
       </div>
 
