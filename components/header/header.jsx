@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {headerLinks} from "@/constants"
+import {headerLinks} from "../../constants"
 
 
 const HeaderMenu = () => {

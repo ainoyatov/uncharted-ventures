@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ContactFormMobile from '@/components/contact-forms/contactFormMobile'
-import ContactFormDesktop from "@/components/contact-forms/contactFormDesktop";
+import ContactFormMobile from '../components/contact-forms/contactFormMobile'
+import ContactFormDesktop from "../components/contact-forms/contactFormDesktop";
 import { Icon } from "@iconify/react";
-import GoogleReviews from '@/components/google/reviews'
-import FAQ from '@/components/contact-forms/faq'
+import GoogleReviews from '../components/google/reviews'
+import FAQ from '../components/contact-forms/faq'
 
 export default async function Home() {
 
@@ -13,7 +13,7 @@ export default async function Home() {
   //Field = reviews
   const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&fields=reviews&reviews_sort=newest&key=${apiKey}`)
   const data = await response.json()
-  const reviews = data.result.reviews.map((review:any) => review)
+  const reviews = data.result.reviews.map((review) => review)
   
   //Field = user_ratings_total
   const rsp = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&fields=user_ratings_total&key=${apiKey}`)
@@ -102,7 +102,7 @@ export default async function Home() {
       
       <div className='pb-4 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
         <div className='flex flex-row gap-4'>
-          {reviews.map((review:any, index:number) => (
+          {reviews.map((review, index) => (
               review.text.length > 0 ? (
                 <div key={index} className="relative aspect-square h-[28vh] max-h-[275px] w-2/3 max-w-[475px] flex-none md:w-1/3 ">
                   <GoogleReviews 
