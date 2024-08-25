@@ -22,12 +22,12 @@ export default async function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center md:p-0 ">
-      <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center max-sm:py-8">
+      {/* <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center max-sm:py-8">
         <p className="fixed lg:hidden lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Uncharted Ventures&nbsp;
           <code className="font-mono font-bold">LLC</code>
         </p>
-      </div>
+      </div> */}
 
       <div className="bg-image-main w-full min-h-screen bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
