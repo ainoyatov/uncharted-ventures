@@ -36,8 +36,8 @@ const FAQAccordion = () => {
             className="bg-slate-100 rounded-xl px-2 xs:px-4 py-3 cursor-pointer font-bold flex justify-between items-center"
             onClick={() => toggleFAQ(index)}
           >
-            <div className="">{faq.question}</div>
-            <span>{activeIndex === index ? '-' : '+'}</span>
+            <div className="dark:text-black">{faq.question}</div>
+            <span className='dark:invert'>{activeIndex === index ? '-' : '+'}</span>
           </div>
           {activeIndex === index && (
             <div className="p-2 xs:ml-2 py-3">

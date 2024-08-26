@@ -34,12 +34,12 @@ export default async function Home() {
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-row flex-wrap">
-              <h1 className="p-2 text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
-              <h1 className="p-2 text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
-              <h1 className="p-2 animate-bounce bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">House</h1>
+              <h1 className="p-2 bg-gradient-to-tl from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
+              <h1 className="p-2 bg-gradient-to-tr from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
+              <h1 className="p-2 animate-bounce bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">House</h1>
             </div>
             
-            <h1 className="text-white bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
+            <h1 className="bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
             <ContactFormDesktop />
@@ -47,26 +47,26 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col place-items-center md:hidden bg-image-main bg-no-repeat ">
+      <div className="flex flex-col place-items-center md:hidden bg-image-main bg-cover bg-bottom md:bg-no-repeat ">
         <div className="flex flex-col p-4 py-8">
           <div className="flex flex-row flex-wrap">
-            <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
-            <div className="p-2 text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
-            <div className="animate-bounce p-2 bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
+            <div className="p-2 bg-gradient-to-tl font-medium from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
+            <div className="p-2 bg-gradient-to-tr font-medium from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
+            <div className="animate-bounce p-2 font-medium bg-gradient-to-t from-orange-600 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
           </div>
-          <div className="p-2 mb-4  text-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
+          <div className="p-2 mb-4 font-medium  bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
           
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className=" text-xl bg-gradient-to-t from-white via-white to-orange-400 text-transparent bg-clip-text">Top Dollar Cash Offer</div>  
+            <div className=" text-xl text-black font-semibold">Top Dollar Cash Offer</div>  
           </div>
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className=" text-xl bg-gradient-to-t bg-clip-text text-transparent from-white via-white to-orange-400 ">Close Within 10 Days</div>  
+            <div className=" text-xl text-black font-semibold ">Close Within 10 Days</div>  
           </div>
           <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className="bg-gradient-to-t bg-clip-text text-transparent from-white via-white to-orange-400 text-xl">Sell In Any Condition</div>  
+            <div className="text-black font-semibold text-xl">Sell In Any Condition</div>  
           </div>
           
         </div>
@@ -459,31 +459,31 @@ export default async function Home() {
         <div className="flex flex-col text-lg md:text-lg ml:text-xl  md:font-thin p-4">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="game-icons:check-mark" color="black"/>
+              <Icon icon="game-icons:check-mark" color="black dark:invert"/>
             </div>
             <p>We buy properties in any condition</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center  ">
-              <Icon icon="game-icons:check-mark" color="black"/>
+              <Icon icon="game-icons:check-mark" color="black dark:invert"/>
             </div>
             <p>Get an offer within 72 hours</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="game-icons:check-mark" color="black"/>
+              <Icon icon="game-icons:check-mark" color="black dark:invert"/>
             </div>
             <p>Quick and easy sale</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="game-icons:check-mark" color="black"/>
+              <Icon icon="game-icons:check-mark" color="black dark:invert"/>
             </div>
             <p>Personalised service</p>
           </div>
           <div className="flex flex-row space-x-4 py-2 items-center">
             <div className="flex items-center justify-center">
-              <Icon icon="game-icons:check-mark" color="black"/>
+              <Icon icon="game-icons:check-mark" color="black dark:invert"/>
             </div>
             <p>Receive a free home evaluation</p>
           </div>
@@ -494,7 +494,7 @@ export default async function Home() {
             <div className="flex items-center justify-center">
               <Icon
                 icon="dashicons:no-alt"
-                color="black"
+                color="black dark:invert"
                 width={28}
                 height={28}
               />
@@ -505,7 +505,7 @@ export default async function Home() {
             <div className="flex items-center justify-center">
               <Icon
                 icon="dashicons:no-alt"
-                color="black"
+                color="black dark:invert"
                 width={28}
                 height={28}
               />
@@ -516,7 +516,7 @@ export default async function Home() {
             <div className="flex items-center justify-center">
               <Icon 
                 icon="dashicons:no-alt"
-                color="black"
+                color="black dark:invert"
                 width={28}
                 height={28}
               />
@@ -527,7 +527,7 @@ export default async function Home() {
             <div className="flex items-center justify-center">
               <Icon 
                 icon="dashicons:no-alt" 
-                color="black"
+                color="black dark:invert"
                 width={28}
                 height={28}
               />
@@ -538,7 +538,7 @@ export default async function Home() {
             <div className="flex items-center justify-center">
               <Icon 
                 icon="dashicons:no-alt" 
-                color="black"
+                color="black dark:invert"
                 width={28}
                 height={28}
               />
