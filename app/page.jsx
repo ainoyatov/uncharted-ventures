@@ -34,12 +34,12 @@ export default async function Home() {
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-row flex-wrap">
-              <h1 className="p-2 bg-gradient-to-tl from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
-              <h1 className="p-2 bg-gradient-to-tr from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
+              <h1 className="p-2 bg-gradient-to-tl from-cyan-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
+              <h1 className="p-2 bg-gradient-to-tr from-cyan-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
               <h1 className="p-2 animate-bounce bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">House</h1>
             </div>
             
-            <h1 className="bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
+            <h1 className="bg-gradient-to-t text-white text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
           </div>
           <div className="max-w-md backdrop-blur-md">
             <ContactFormDesktop />
@@ -217,7 +217,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+      <div className="flex flex-row my-8 place-items-center bg-cyan-600 rounded-full hover:bg-cyan-800 cursor-pointer transition-transform transform hover:scale-125">
         <div className="p-1 m-2 ml-4 rounded-full bg-white">
           <Icon 
             icon="flat-color-icons:cell-phone"
@@ -247,7 +247,7 @@ export default async function Home() {
         <div className="grid grid-cols-1 gap-y-4 px-4 xs:grid-cols-2 md:grid-cols-3 xs:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
               <div className="flex flex-row space-x-2 py-2">
-                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                   <Icon icon="game-icons:check-mark" color="white"/>
                 </div>
                 <h2 className="text-xl font-semibold text-white">
@@ -261,7 +261,7 @@ export default async function Home() {
 
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                 <Icon icon="game-icons:check-mark" color="white"/>
               </div>
               <h2 className="text-xl font-semibold text-white">
@@ -274,7 +274,7 @@ export default async function Home() {
           </div>     
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                 <Icon icon="game-icons:check-mark" color="white"/>
               </div>
               <h2 className="text-xl font-semibold text-white">
@@ -287,7 +287,7 @@ export default async function Home() {
           </div>
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                 <Icon icon="game-icons:check-mark" color="white"/>
               </div>
               <h2 className="text-xl font-semibold text-white">
@@ -300,7 +300,7 @@ export default async function Home() {
           </div>
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                 <Icon icon="game-icons:check-mark" color="white"/>
               </div>
               <h2 className="text-xl font-semibold text-white">
@@ -313,7 +313,7 @@ export default async function Home() {
           </div>
           <div className="group shadow-lg rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-500 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <div className="flex flex-row space-x-2 py-2">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-600">
                 <Icon icon="game-icons:check-mark" color="white"/>
               </div>
               <h2 className="text-xl font-semibold text-white">
@@ -327,7 +327,7 @@ export default async function Home() {
         </div>
 
 
-        {/* <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+        {/* <div className="flex flex-row my-8 place-items-center bg-cyan-500 rounded-full hover:bg-cyan-700 cursor-pointer transition-transform transform hover:scale-125">
           <div className="p-1 m-2 ml-4 rounded-full bg-white">
             <Icon 
               icon="flat-color-icons:cell-phone"
@@ -350,7 +350,7 @@ export default async function Home() {
               className="rotate-180"
             />
           </div>
-          <button className="flex flex-row p-2 gap-2 text-xl cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-blue-500 text-white  hover:bg-blue-700">
+          <button className="flex flex-row p-2 gap-2 text-xl cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-cyan-600 text-white  hover:bg-cyan-800">
             <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
             <div className="flex">Free Cash Offer</div>
           </button>
@@ -548,12 +548,12 @@ export default async function Home() {
         </div>
       </div>
 
-      {/* <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-blue-500 text-white my-2 flex flex-row p-2 gap-2 text-xl hover:bg-blue-700">
+      {/* <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-cyan-500 text-white my-2 flex flex-row p-2 gap-2 text-xl hover:bg-cyan-700">
           <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
           <p>Free Cash Offer</p>
       </button> */}
 
-      <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+      <div className="flex flex-row my-8 place-items-center bg-cyan-500 rounded-full hover:bg-cyan-700 cursor-pointer transition-transform transform hover:scale-125">
         <div className="p-1 m-2 ml-4 rounded-full bg-white">
           <Icon 
             icon="flat-color-icons:cell-phone"
