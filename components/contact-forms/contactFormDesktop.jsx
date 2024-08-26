@@ -20,7 +20,7 @@ const ContactFormDesktop = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="border-orange-400 border-4 p-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="border-orange-400 border-4 p-2 backdrop-blur-md">
 
             <div className='mb-2 flex justify-center'>
             <p className="text-white text-sm lg:text-lg 2xl:text-2xl">Get Free No-Obligation Offer Now!</p>
@@ -29,12 +29,12 @@ const ContactFormDesktop = () => {
             <div className='flex flex-row place-items-center mb-2'>
                 <div className="flex flex-col">
                     <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>1</div>
-                    <div className="text-[8px] text-slate-600">Contact Information</div>
+                    <div className="text-[8px] text-white">Contact Information</div>
                 </div>
                 <div className='flex flex-col w-full h-px bg-cyan-500 mx-4'></div>
                 <div className="flex flex-col">
                     <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>2</div>
-                    <div className="text-[8px] text-slate-600">Property Details</div>
+                    <div className="text-[8px] text-white">Property Details</div>
                 </div>
             </div> 
 

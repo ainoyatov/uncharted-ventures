@@ -56,7 +56,7 @@ export default async function Home() {
 
           </div>
           
-          <div className="max-w-md backdrop-blur-md">
+          <div className="max-w-md">
             <ContactFormDesktop />
           </div>
         </div>
