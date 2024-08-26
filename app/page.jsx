@@ -26,15 +26,36 @@ export default async function Home() {
       <div className="bg-image-main w-full min-h-screen bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
         <div className="absolute inset-0 grid grid-cols-2 place-items-center mx-2">
-          <div className="flex flex-col space-y-4">
-            <div className="flex flex-row flex-wrap">
-              <h1 className="p-2 bg-gradient-to-tl from-cyan-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Sell</h1>
-              <h1 className="p-2 bg-gradient-to-tr from-cyan-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Your</h1>
-              <h1 className="p-2 animate-bounce bg-gradient-to-t from-red-600 via-white to-white bg-clip-text text-transparent text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">House</h1>
+          <div className="flex flex-col ">
+            <div className="flex flex-row flex-wrap mb-6">
+              <div className="p-2 text-5xl xl:text-7xl text-white bg-cyan-900">Sell</div>
+              <div className="p-2 text-5xl xl:text-7xl">Your</div>
+              <div className="p-2 animate-bounce text-white text-5xl xl:text-7xl bg-cyan-900">House</div>
             </div>
             
-            <h1 className="bg-gradient-to-t text-white text-5xl font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl">Fast For Cash!</h1>
+            <div className="flex flex-row flex-wrap text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12">
+              <div className="p-2 text-5xl xl:text-7xl text-white ">Fast</div>
+              <div className="p-2 text-5xl xl:text-7xl">For</div>
+              <div className="p-2 text-5xl xl:text-7xl text-white bg-cyan-900">Cash</div>
+            </div>
+
+
+            <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2">
+              <Icon icon="game-icons:check-mark" color="white"/>
+              <div className="text-xl md:text-2xl md:p-1 text-white font-semibold">Top Dollar Cash Offer</div>  
+            </div>
+            <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2">
+              <Icon icon="game-icons:check-mark" color="white"/>
+              <div className="text-xl md:text-2xl md:p-1 text-white font-semibold ">Close Within 10 Days</div>  
+            </div>
+            <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2">
+              <Icon icon="game-icons:check-mark" color="white"/>
+              <div className="text-xl md:text-2xl md:p-1 text-white font-semibold">Sell In Any Condition</div>  
+            </div>
+            
+
           </div>
+          
           <div className="max-w-md backdrop-blur-md">
             <ContactFormDesktop />
           </div>
@@ -43,24 +64,29 @@ export default async function Home() {
       
       <div className="flex flex-col place-items-center md:hidden bg-image-main bg-cover bg-bottom md:bg-no-repeat ">
         <div className="flex flex-col p-4 py-8">
-          <div className="flex flex-row flex-wrap">
-            <div className="p-2 bg-gradient-to-tl font-medium from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Sell</div>
-            <div className="p-2 bg-gradient-to-tr font-medium from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Your</div>
-            <div className="animate-bounce p-2 font-medium bg-gradient-to-t from-orange-600 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">House</div>
+          <div className="flex flex-row flex-wrap font-medium text-white text-2sm xs:text-5xl sm:text-6xl mb-6">
+            <div className="flex items-center p-2 bg-cyan-900">Sell</div>
+            <div className="p-2 text-black ">Your</div>
+            <div className="flex items-center animate-bounce bg-cyan-900">House</div>
           </div>
-          <div className="p-2 mb-4 font-medium  bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
-          
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900">
-            <Icon icon="game-icons:check-mark" color="white"/>
-            <div className=" text-xl text-black font-semibold">Top Dollar Cash Offer</div>  
+
+          <div className="flex flex-row flex-wrap text-5xl font-medium lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 ">
+            <div className="p-2 text-2sm xs:text-5xl sm:text-6xl text-white">Fast</div>
+            <div className="p-2 text-2sm xs:text-5xl sm:text-6xl">For</div>
+            <div className="p-2 flex items-center text-2sm xs:text-5xl sm:text-6xl bg-cyan-900 text-white">Cash</div>
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 ">
+
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className=" text-xl text-black font-semibold ">Close Within 10 Days</div>  
+            <div className=" text-xl text-white font-semibold">Top Dollar Cash Offer</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2 ">
             <Icon icon="game-icons:check-mark" color="white"/>
-            <div className="text-black font-semibold text-xl">Sell In Any Condition</div>  
+            <div className=" text-xl text-white font-semibold ">Close Within 10 Days</div>  
+          </div>
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 bg-cyan-900 mb-2">
+            <Icon icon="game-icons:check-mark" color="white"/>
+            <div className="text-white font-semibold text-xl">Sell In Any Condition</div>  
           </div>
           
         </div>
