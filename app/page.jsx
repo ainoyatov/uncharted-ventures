@@ -56,15 +56,15 @@ export default async function Home() {
           </div>
           <div className="p-2 mb-4 font-medium  bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
           
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className=" text-xl text-black font-semibold">Top Dollar Cash Offer</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className=" text-xl text-black font-semibold ">Close Within 10 Days</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className="text-black font-semibold text-xl">Sell In Any Condition</div>  
           </div>

@@ -19,7 +19,7 @@ const NavBar = () => {
 
     return (
 
-        <div className="bg-gray-800 w-full">
+        <div className="bg-cyan-900 w-full">
             <div className="mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -71,7 +71,7 @@ const NavBar = () => {
                                 <a 
                                     key={menu.label}
                                     href={menu.href}
-                                    className="rounded-md px-3 py-2 text-sm font-medium text-white bg-gray-900 hover:bg-gray-700"
+                                    className="rounded-md px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700"
                                 >
                                     {menu.label}
                                 </a>

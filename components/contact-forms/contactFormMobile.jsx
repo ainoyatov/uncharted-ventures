@@ -18,18 +18,18 @@ const ContactFormMobile = () => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center backdrop-blur-sm'>
-            <div className='flex flex-col space-y-2 py-4 xs:py-8'>
-                <div className="flex justify-center text-blue-400 dark:text-white font-bold text-2xl sm:text-3xl px-2">Get Free No-Obligation</div>
-                <div className="flex justify-center text-blue-400 font-bold text-2xl sm:text-3xl max-xs:px-2">Offer Now!</div>
+            <div className='flex flex-col my-8 xs:py-8'>
+                <div className="flex p-2 justify-center bg-gradient-to-t from-cyan-700 via-white to-white bg-clip-text text-transparent font-bold text-3xl xs:text-4xl sm:text-5xl">Get Free No-Obligation</div>
+                <div className="flex p-2 justify-center bg-gradient-to-t from-cyan-700 via-white to-white bg-clip-text text-transparent font-bold text-3xl xs:text-4xl sm:text-5xl">Offer Now!</div>
             </div>
             <div className='flex flex-row place-items-center mb-6 w-3/4'>
                 <div className="flex flex-col">
-                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-500 text-white text-xl font-bold rounded-full'>1</div>
+                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-cyan-700  text-white text-xl font-bold rounded-full'>1</div>
                     <div className="text-sm text-white">Contact Information</div>
                 </div>
                 <div className='flex flex-col w-full h-px bg-blue-500 mx-8'></div>
                 <div className="flex flex-col">
-                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-blue-500 text-white text-xl font-bold rounded-full'>2</div>
+                    <div className='flex p-4 items-center justify-center w-10 h-10 bg-cyan-700 text-white text-xl font-bold rounded-full'>2</div>
                     <div className="text-sm text-white">Property Details</div>
                 </div>
                 
