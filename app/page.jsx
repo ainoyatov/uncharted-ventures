@@ -23,7 +23,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center md:p-0 ">
       {/* <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center max-sm:py-8">
-        <p className="fixed lg:hidden lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+        <p className="fixed lg:hidden lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-full lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Uncharted Ventures&nbsp;
           <code className="font-mono font-bold">LLC</code>
         </p>
@@ -217,7 +217,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-xl hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+      <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
         <div className="p-1 m-2 ml-4 rounded-full bg-white">
           <Icon 
             icon="flat-color-icons:cell-phone"
@@ -228,18 +228,20 @@ export default async function Home() {
         <button className="flex my-2 text-[16px] mr-4 text-white font-semibold">Call Us Today</button>
       </div>
 
-      <div className="flex flex-col  w-full bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  lg:h-1/2 justify-center items-center">
-        <div className="flex flex-col m-2 md:m-8 max-w-[900px] max-md:hidden">
-          <p className="flex text-[32px] font-bold px-4 md:text-white justify-center lg:text-[36px]">
-            Looking To Sell Your House Fast For Cash? 
-          </p>
-          <p className="flex text-[32px] font-bold px-4 md:text-white  justify-center lg:text-[36px]">
-            We Provide Solutions For All Situations
-          </p>
+      <div className="flex flex-col my-12 w-full bg-image-grid-options bg-cover bg-bottom  md:bg-no-repeat  justify-center items-center">
+        
+        <div className="flex flex-col justify-center text-white mt-8 mb-2">
+          <div className="flex justify-center text-3xl mxs:text-4xl lg:text-5xl">We Provide Solutions</div>
+          <div className="flex exs:justify-center text-3xl mxs:text-4xl lg:text-5xl">For All Situations</div>
         </div>
-
-        <div className="flex w-full text-center text-white p-2 mxs:p-4 max-w-[900px] text-[32px] md:hidden">
-          <p>Looking To Sell Your House Fast For Cash? We Provide Solutions For All Situations</p>
+        <div className="pb-8">
+          <Icon 
+            icon="carbon:direction-curve"
+            color="white"
+            width={48}
+            height={48}
+            className="rotate-180"
+          />
         </div>
 
         <div className="grid grid-cols-1 gap-y-4 px-4 xs:grid-cols-2 md:grid-cols-3 xs:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8 max-w-[900px]">
@@ -325,7 +327,7 @@ export default async function Home() {
         </div>
 
 
-        {/* <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-xl hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+        {/* <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
           <div className="p-1 m-2 ml-4 rounded-full bg-white">
             <Icon 
               icon="flat-color-icons:cell-phone"
@@ -339,7 +341,16 @@ export default async function Home() {
         <div className="flex flex-col py-16 gap-2 w-full text-white items-center text-3xl">
           <div className="flex mb-2 text-4xl md:text-5xl">No Commission</div>
           <div className="flex mb-2 text-4xl md:text-5xl">No Hidden Charges</div>
-          <button className="flex flex-row my-8 p-2 gap-2 text-xl cursor-pointer  transition-transform  transform hover:scale-125 rounded-xl bg-blue-500 text-white  hover:bg-blue-700">
+          <div className="mb-2">
+            <Icon 
+              icon="carbon:direction-curve"
+              color="white"
+              width={48}
+              height={48}
+              className="rotate-180"
+            />
+          </div>
+          <button className="flex flex-row p-2 gap-2 text-xl cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-blue-500 text-white  hover:bg-blue-700">
             <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
             <div className="flex">Free Cash Offer</div>
           </button>
@@ -481,41 +492,77 @@ export default async function Home() {
         <div className="flex flex-col text-lg md:text-lg ml:text-xl md:font-thin p-4 ">
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="dashicons:no-alt" color="black"/>
+              <Icon
+                icon="dashicons:no-alt"
+                color="black"
+                width={28}
+                height={28}
+              />
             </div>
             <p>No repairs or cleaning required</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="dashicons:no-alt" color="black"/>
+              <Icon
+                icon="dashicons:no-alt"
+                color="black"
+                width={28}
+                height={28}
+              />
             </div>
             <p>No obligations</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="dashicons:no-alt" color="black"/>
+              <Icon 
+                icon="dashicons:no-alt"
+                color="black"
+                width={28}
+                height={28}
+              />
             </div>
             <p>No listings or for sale boards</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center border-b-2">
             <div className="flex items-center justify-center">
-              <Icon icon="dashicons:no-alt" color="black"/>
+              <Icon 
+                icon="dashicons:no-alt" 
+                color="black"
+                width={28}
+                height={28}
+              />
             </div>
             <p>No waiting months for a buyer</p>
           </div>
           <div className="flex flex-row space-x-4 py-4 items-center">
             <div className="flex items-center justify-center">
-              <Icon icon="dashicons:no-alt" color="black"/>
+              <Icon 
+                icon="dashicons:no-alt" 
+                color="black"
+                width={28}
+                height={28}
+              />
             </div>
             <p>No fees or commissions charged</p>
           </div>
         </div>
       </div>
 
-      <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-xl bg-blue-500 text-white my-2 flex flex-row p-2 gap-2 text-xl hover:bg-blue-700">
+      {/* <button className="cursor-pointer  transition-transform  transform hover:scale-125 rounded-full bg-blue-500 text-white my-2 flex flex-row p-2 gap-2 text-xl hover:bg-blue-700">
           <Icon icon="fa6-solid:sack-dollar" width={24} height={24} />
           <p>Free Cash Offer</p>
-      </button>
+      </button> */}
+
+      <div className="flex flex-row my-8 place-items-center bg-blue-500 rounded-full hover:bg-blue-700 cursor-pointer transition-transform transform hover:scale-125">
+        <div className="p-1 m-2 ml-4 rounded-full bg-white">
+          <Icon 
+            icon="flat-color-icons:cell-phone"
+            width={20}
+            height={20}
+          />
+        </div>
+        <button className="flex my-2 text-[16px] mr-4 text-white font-semibold">Call Us Today</button>
+      </div>
 
       <div className="p-2 py-16">
         <div className="flex justify-center text-2xl font-bold mb-4">FAQ</div>
