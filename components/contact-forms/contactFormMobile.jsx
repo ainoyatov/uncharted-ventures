@@ -130,7 +130,7 @@ const ContactFormMobile = () => {
                 <div>
                     <label
                         htmlFor="remember"
-                        className="ms-2 text-sm font-medium text-black md:text-slate-200 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
+                        className="ms-2 text-sm font-medium text-white md:text-slate-200 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="/terms-of-service" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use</a> and <a href="/privacy-policy" className="text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
                     </label>
                 </div>
             </div>
