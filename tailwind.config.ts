@@ -24,6 +24,7 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "image-main": "url('/pexels-street.jpg')",
         "image-grid-options": "url('/pexels-lake-house.jpg')",
+        "image-landing-page": "url('/pexels-under-construction.jpg')",
       },
       backgroundSize: {
         "custom-image-main": '200%'
