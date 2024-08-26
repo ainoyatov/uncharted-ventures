@@ -31,7 +31,7 @@ const ContactFormDesktop = () => {
                     <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>1</div>
                     <div className="text-[8px] text-slate-600">Contact Information</div>
                 </div>
-                <div className='flex flex-col w-full h-px bg-blue-500 mx-4'></div>
+                <div className='flex flex-col w-full h-px bg-cyan-500 mx-4'></div>
                 <div className="flex flex-col">
                     <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>2</div>
                     <div className="text-[8px] text-slate-600">Property Details</div>
@@ -42,7 +42,7 @@ const ContactFormDesktop = () => {
                 <label htmlFor='property-address'></label>
                 <input 
                     type="text" 
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                     placeholder="Property Address"
                     required
                     {...register('property-address')}
@@ -54,7 +54,7 @@ const ContactFormDesktop = () => {
                     <label htmlFor='city'></label>
                     <input
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                         placeholder="City"
                         required
                         {...register('city')} 
@@ -64,7 +64,7 @@ const ContactFormDesktop = () => {
                     <label htmlFor='state'></label>
                     <input 
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                         placeholder="State"
                         {...register('state')}
                         required />
@@ -73,7 +73,7 @@ const ContactFormDesktop = () => {
                     <label htmlFor='zipcode'></label>
                     <input 
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                         placeholder="Zipcode"
                         {...register('zipcode')}
                         required 
@@ -86,7 +86,7 @@ const ContactFormDesktop = () => {
                 <input 
                     type="text"
                     placeholder="Full Name" 
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                     {...register('full-name')}
                     required    
                 />
@@ -94,7 +94,7 @@ const ContactFormDesktop = () => {
                 <div className="grid gap-2 mb-2 md:grid-cols-2">
                 <div>
                     <label htmlFor='email'></label>
-                    <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                     placeholder="Email"
                     {...register('email')}
                     required 
@@ -104,7 +104,7 @@ const ContactFormDesktop = () => {
                     <label htmlFor='phone'></label>
                     <input
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                         placeholder="Phone"
                         {...register('phone')}
                         required
@@ -118,7 +118,7 @@ const ContactFormDesktop = () => {
                     <input
                         type="checkbox" 
                         value="" 
-                        className="w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                        className="w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-cyan-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-cyan-600 dark:ring-offset-gray-800"
                         required
                         {...register('tos')}
                         onClick={toggle}
@@ -126,7 +126,7 @@ const ContactFormDesktop = () => {
                 </div>
                 <label
                     htmlFor="remember"
-                    className="ms-2 text-[8px] text-slate-50 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
+                    className="ms-2 text-[8px] text-slate-50 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
                 </label>
             </div>
             {isToggled ? (

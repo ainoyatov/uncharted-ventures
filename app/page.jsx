@@ -22,12 +22,6 @@ export default async function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center md:p-0 ">
-      {/* <div className="z-10 w-full  items-center justify-between font-mono text-sm 2xl:text-lg lg:flex 4xl:justify-center max-sm:py-8">
-        <p className="fixed lg:hidden lg:mb-4 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-500 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-full lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Uncharted Ventures&nbsp;
-          <code className="font-mono font-bold">LLC</code>
-        </p>
-      </div> */}
 
       <div className="bg-image-main w-full min-h-screen bg-cover bg-no-repeat relative max-md:hidden flex place-items-center ">
 
@@ -56,15 +50,15 @@ export default async function Home() {
           </div>
           <div className="p-2 mb-4 font-medium  bg-gradient-to-t from-cyan-400 via-white to-white bg-clip-text text-transparent text-2sm xs:text-5xl sm:text-6xl">Fast For Cash!</div>
           
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className=" text-xl text-black font-semibold">Top Dollar Cash Offer</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75 ">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className=" text-xl text-black font-semibold ">Close Within 10 Days</div>  
           </div>
-          <div className="flex flex-row place-items-center space-x-2 w-full justify-center skew-y-3 scal-75 translate-x-4">
+          <div className="flex flex-row place-items-center space-x-2 w-full justify-center scale-75">
             <Icon icon="game-icons:check-mark" color="white"/>
             <div className="text-black font-semibold text-xl">Sell In Any Condition</div>  
           </div>

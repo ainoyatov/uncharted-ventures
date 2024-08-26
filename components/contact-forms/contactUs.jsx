@@ -96,7 +96,7 @@ const ContactUsForm = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
 
             <div className="flex flex-col px-2 md:px-4 lg:px-8">
-            <div className="text-blue-500 text-4xl font-bold self-center whitespace-nowrap mt-8 max-md:mt-10">
+            <div className="text-cyan-500 text-4xl font-bold self-center whitespace-nowrap mt-8 max-md:mt-10">
                 Contact Us
             </div>
             <div className="text-neutral-500 text-center text-lg font-medium max-w-[459px] self-center mt-8 max-md:max-w-full">

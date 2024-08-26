@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { headerLinks } from "../../constants";
+import { headerLinks, profileLinks } from "../../constants";
+
 
 const NavBar = () => {
 
@@ -40,7 +41,9 @@ const NavBar = () => {
                                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
+                                    
                                 </div>
+                                
                             ) : (
                                 <div>
                                     <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -52,6 +55,7 @@ const NavBar = () => {
                         
                         
                     </button>
+                    
                 </div>
                 
                 
@@ -117,10 +121,21 @@ const NavBar = () => {
                         {
                             profileClicked ? (<div>
                                 <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex="-1">
+                                    {
+                                        profileLinks.map((menu) => (
+                                            <a
+                                                key={menu.label}
+                                                href={menu.href}
+                                                className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-1"
+                                            >
+                                                {menu.label}
+                                            </a>
+                                        ))
+                                    }
                                     {/* <!-- Active: "bg-gray-100", Not Active: "" --> */}
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-0">Your Profile</a>
+                                    {/* <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-0">Your Profile</a>
                                     <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-1">Settings</a>
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-2">Sign out</a>
+                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-2">Sign out</a> */}
                                 </div>
                             </div>) : (<div></div>)
                         }
@@ -137,7 +152,7 @@ const NavBar = () => {
                     <div className="sm:hidden" id="mobile-menu">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {headerLinks.map((menu) => (
-                                <a
+                                <a 
                                     key={menu.label}
                                     href={menu.href}
                                     className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"

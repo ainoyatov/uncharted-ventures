@@ -5,6 +5,11 @@ export const headerLinks = [
     {href: "/contact-us", label: "Contact Us"},
 ];
 
+export const profileLinks = [
+    {href: "/appointment", label: "Appointment"},
+    {href: "/contact-us", label: "Contact Us"},
+    {href: "/work-hours", label: "Work Hours"}
+];
 
 export const footerLinks = [
     {

@@ -7,7 +7,7 @@ const CalendlyBooking = () => {
   return(
     <div>
       <div>
-        <div className="text-blue-500 text-4xl font-bold text-center flex justify-center mt-8 max-md:mt-10">
+        <div className="text-cyan-500 text-4xl font-bold text-center flex justify-center mt-8 max-md:mt-10">
           Schedule Time
         </div>
         <div className="text-neutral-500  text-lg  text-center font-medium flex justify-center p-4 mb-8">
