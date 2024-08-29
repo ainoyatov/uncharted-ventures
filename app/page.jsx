@@ -95,57 +95,10 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col py-24 lg:py-16">
-          
-          <div className="flex w-full justify-center text-4xl">
-            Excellent
-          </div>
-
-          <div className="flex flex-row w-full justify-center pb-2">
-            <Icon icon="noto:star" width="24" height="24"/>
-            <Icon icon="noto:star" width="24" height="24"/>
-            <Icon icon="noto:star" width="24" height="24"/>
-            <Icon icon="noto:star" width="24" height="24"/>
-            <Icon icon="noto:star" width="24" height="24"/>
-          </div>
-          
-          <div className="flex w-full justify-center font-light text-[10px] pb-2">
-            Based on <span className="font-bold px-1">{totalUserReviews} Reviews</span>
-          </div>
-          <div className="flex w-full justify-center pb-2">
-            <Image 
-              src='/google-logo.svg'
-              alt="Google review logo"
-              width={90}
-              height={90}
-            />
-          </div>
-
-      </div>
-      
-      <div className='pb-4 py-6 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
-        <div className='flex flex-row gap-4'>
-          {reviews.map((review, index) => (
-              review.text.length > 0 ? (
-                <div key={index} className="relative aspect-square h-[28vh] max-h-[275px] w-2/3 max-w-[475px] flex-none md:w-1/3 ">
-                  <GoogleReviews 
-                    reviews={review.text}
-                    authors={review.author_name}
-                    reviewTime={review.time}
-                    pictures={review.profile_photo_url}
-                    index={index}
-                  />
-                </div>
-              ) : null
-            ))
-          }
-          </div>
-      </div>
       
       <div className="flex flex-col p-2 py-24 space-y-4">
-        <div className="flex flex-col sm:flex-row justify-center">
-          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl px-2">We Buy Houses</div>
-          <div className="flex text-[20px] exs:text-[32px] justify-center font-bold lg:text-2xl">In 3 Easy Steps</div>
+        <div className="flex font-bold text-4xl justify-center">
+          <h1>How to get started</h1>
         </div>
         <div className="flex flex-row justify-center place-items-center">
           <div>
@@ -615,10 +568,57 @@ export default async function Home() {
           <p className="p-2 py-4 mb-4">Explore our frequently asked questions to find essential information on buying and selling homes, including tips, processes, and answers to common concerns, all aimed at making your real estate journey smooth and informed.</p>
         </div>
         
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <FAQ />
         </div>
 
+      </div>
+
+      <div className="flex flex-col py-12 lg:space-y-2">
+          
+          <div className="flex w-full justify-center text-5xl mb-2">
+            Excellent
+          </div>
+
+          <div className="flex flex-row w-full justify-center pb-2">
+            <Icon icon="noto:star" width="32" height="32"/>
+            <Icon icon="noto:star" width="32" height="32"/>
+            <Icon icon="noto:star" width="32" height="32"/>
+            <Icon icon="noto:star" width="32" height="32"/>
+            <Icon icon="noto:star" width="32" height="32"/>
+          </div>
+          
+          <div className="flex w-full justify-center font-light text-[10px] pb-2">
+            Based on <span className="font-bold px-1">{totalUserReviews} Reviews</span>
+          </div>
+          <div className="flex w-full justify-center pb-2">
+            <Image 
+              src='/google-logo.svg'
+              alt="Google review logo"
+              width={90}
+              height={90}
+            />
+          </div>
+
+      </div>
+      
+      <div className='pb-4 py-6 overflow-x-scroll overscroll-none w-[200px] exs:w-[300px] mxs:w-[400px] xs:w-[450px] sm:w-[620px] md:w-[725px] lg:w-[970px] xl:w-[1270px] 2xl:w-[1526px]'>   
+        <div className='flex flex-row gap-4'>
+          {reviews.map((review, index) => (
+              review.text.length > 0 ? (
+                <div key={index} className="relative aspect-square h-[28vh] max-h-[275px] w-2/3 max-w-[475px] flex-none md:w-1/3 ">
+                  <GoogleReviews 
+                    reviews={review.text}
+                    authors={review.author_name}
+                    reviewTime={review.time}
+                    pictures={review.profile_photo_url}
+                    index={index}
+                  />
+                </div>
+              ) : null
+            ))
+          }
+          </div>
       </div>
 
     </main>
