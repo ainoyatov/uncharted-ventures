@@ -9,7 +9,7 @@ export default function ContactForm() {
     const [state, setState] = useState('')
 
     const FormAction = async (formData) => {
-        const res = await fetch('http://localhost:3000/api/form', {
+        const res = await fetch('/api/form', {
             method: 'POST',
             body: formData,
         })

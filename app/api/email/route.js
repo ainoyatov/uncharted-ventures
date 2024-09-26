@@ -1,15 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// export async function POST(request) {
-//     const {data} = await request.json()
-//     console.log(data.name);
-//     console.log(data.phone)
-
-//     return NextResponse.json({message: 'Done'});
-// }
-
-
 
 export async function POST(request) {
     const {data} = await request.json();
@@ -41,8 +32,8 @@ export async function POST(request) {
             } else {
               reject(err.message);
             }
-          });
         });
+    });
 
     try {
         await sendMailPromise();
