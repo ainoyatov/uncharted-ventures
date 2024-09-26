@@ -12,7 +12,8 @@ const ContactFormDesktop = () => {
     const [isToggled, setIsToggled] = useState(false);
 
     const onSubmit = async (data) => {
-        console.log('Submit is working!')
+        // const fname = data.get('name')
+        // console.log(fname)
     }
 
     const toggle = () => {
@@ -39,13 +40,13 @@ const ContactFormDesktop = () => {
             </div> 
 
             <div className='mb-2'>
-                <label htmlFor='property-address'></label>
+                <label htmlFor='address'></label>
                 <input 
                     type="text" 
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
                     placeholder="Property Address"
                     required
-                    {...register('property-address')}
+                    {...register('address')}
                 />
             </div>
 
@@ -82,12 +83,12 @@ const ContactFormDesktop = () => {
             </div>
 
             <div className="mb-2">
-                <label htmlFor='full-name'></label>
+                <label htmlFor='name'></label>
                 <input 
                     type="text"
                     placeholder="Full Name" 
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
-                    {...register('full-name')}
+                    {...register('name')}
                     required    
                 />
                 </div>
@@ -132,9 +133,10 @@ const ContactFormDesktop = () => {
             {isToggled ? (
                 <div className="py-2">
                     <button
-                        disabled={!isToggled}
+                        disabled={isToggled}
                         type="submit" 
-                        className={`active-btn`}>
+                        className={`active-btn`}
+                        >
                         <p>Get Cash Offer</p>
                     </button>
                 </div>
