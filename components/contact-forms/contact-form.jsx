@@ -7,6 +7,7 @@ import {sendEmail} from '../../utils/sendEmail'
 export default function ContactForm() {
 
     const [state, setState] = useState('')
+    const [isToggled, setIsToggled] = useState(false);
 
     const FormAction = async (formData) => {
         const res = await fetch('/api/form', {
@@ -19,6 +20,7 @@ export default function ContactForm() {
         //set the state
         setState(data);
         
+        console.log(data)
         //send email
         sendEmail(data);
         
@@ -31,19 +33,150 @@ export default function ContactForm() {
 
     }
 
+    const toggle = () => {
+        setIsToggled(!isToggled);
+    }
+
     return (
         <>  
             
-            <form action={FormAction} className="flex justify-center p-4">
-                <div className="flex flex-col  space-y-4">
-                    <input type="text" name="name" placeholder="Enter name" className="border rounded-xl p-2"/>
-                    <input type="text" name="phone" placeholder="Enter phone" className="border rounded-xl p-2" />
-                    <input type="text" name="email" placeholder="Enter email" className="border rounded-xl p-2"/>
-                    <button type="submit" className="bg-green-300 p-2 rounded-full">Submit</button>
+            <form action={FormAction} className="border-orange-400 border-4 p-2 backdrop-blur-md">
 
-                    {state.message}
+                <div className='mb-2 flex justify-center'>
+                <p className="text-white text-sm lg:text-lg 2xl:text-2xl">Get Free No-Obligation Offer Now!</p>
                 </div>
+
+                <div className='flex flex-row place-items-center mb-2'>
+                    <div className="flex flex-col">
+                        <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>1</div>
+                        <div className="text-[8px] text-white">Contact Information</div>
+                    </div>
+                    <div className='flex flex-col w-full h-px bg-cyan-500 mx-4'></div>
+                    <div className="flex flex-col">
+                        <div className='flex p-2 items-center justify-center w-6 h-6 bg-cyan-800 text-white text-xl rounded-full'>2</div>
+                        <div className="text-[8px] text-white">Property Details</div>
+                    </div>
+                </div> 
+
+                <div className='mb-2'>
+                    
+                    <input 
+                        type="text"
+                        name="address"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                        placeholder="Property Address"
+                        required
+                    />
+                </div>
+
+                <div className="grid gap-2 mb-2 md:grid-cols-3">
+                    <div>
+                        
+                        <input
+                            type="text"
+                            name="city"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                            placeholder="City"
+                            required
+                             
+                        />
+                    </div>
+                    <div>
+                        
+                        <input 
+                            type="text"
+                            name="state"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                            placeholder="State"
+                            required />
+                    </div>
+                    <div>
+                        
+                        <input 
+                            type="text"
+                            name="zipcode"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                            placeholder="Zipcode"
+                            required 
+                        />
+                    </div>
+                </div>
+
+                <div className="mb-2">
+                    
+                    <input 
+                        type="text"
+                        name="name"
+                        placeholder="Full Name" 
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                        required  
+                    />
+                    </div>
+                    <div className="grid gap-2 mb-2 md:grid-cols-2">
+                    <div>
+                        
+                        <input
+                            type="text" 
+                            name="email"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                            placeholder="Email"
+                            required 
+                        />
+                    </div>
+                    <div>
+                        
+                        <input
+                            type="text"
+                            name="phone"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-0.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                            placeholder="Phone"
+                            required
+                        />
+                    </div>
+                </div>
+                    
+                <div className="flex items-start p-2">
+                    <div className="flex items-center h-3">
+                        
+                        <input
+                            type="checkbox"
+                            name="tos"
+                            value="" 
+                            className="w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-cyan-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-cyan-600 dark:ring-offset-gray-800"
+                            required
+                            onClick={toggle}
+                        />
+                    </div>
+                    <label
+                        htmlFor="remember"
+                        className="ms-2 text-[8px] text-slate-50 dark:text-gray-300">By submitting this request for information, I hereby agree to the <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">Terms Of Use and Privacy Policy</a> and consent to receive messages or calls via email, phone and or SMS. Standard Msg and Data Rates Apply.
+                    </label>
+                </div>
+                
+                
+                {isToggled ? (
+                    <div className="py-2">
+                        <button
+                            disabled={!isToggled}
+                            type="submit" 
+                            className={`active-btn`}
+                            >
+                            <p>Get Cash Offer</p>
+                        </button>
+                    </div>
+                ):(
+                    <div className="py-2">
+                        <button
+                            disabled={!isToggled}
+                            type="submit" 
+                            className={`disabled-btn`}>
+                            <p>Get Cash Offer</p>
+                        </button>
+                    </div>
+                )}
+                
             </form>
+            
         </>
     )
 }

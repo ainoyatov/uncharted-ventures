@@ -4,6 +4,7 @@ import ContactFormDesktop from "../components/contact-forms/contactFormDesktop";
 import { Icon } from "@iconify/react";
 import GoogleReviews from '../components/google/reviews'
 import FAQ from '../components/contact-forms/faq'
+import ContactForm from '../components/contact-forms/contact-form'
 
 export default async function Home() {
 
@@ -57,7 +58,8 @@ export default async function Home() {
           </div>
           
           <div className="max-w-md">
-            <ContactFormDesktop />
+            <ContactForm />
+            {/* <ContactFormDesktop /> */}
           </div>
         </div>
       </div>

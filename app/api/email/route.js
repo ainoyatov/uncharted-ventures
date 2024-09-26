@@ -19,9 +19,8 @@ export async function POST(request) {
         from: `New client contact ${fromEmail}`,
         to: process.env.GMAIL_EMAIL_TO,
         // cc: email, (uncomment this line if you want to send a copy to the sender)
-        // subject: `${purpose}`,
-        subject: `${data.name}, ${data.phone}, ${data.email}`,
-        text: 'Hello'
+        subject: `${data.name}`,
+        text: `${data.name}, ${data.phone}, ${data.email} ${data.address} ${data.city} ${data.state} ${data.zipcode}`
     };
 
     const sendMailPromise = () =>
