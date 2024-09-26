@@ -1,10 +1,10 @@
 import Image from "next/image";
-import ContactFormMobile from '../components/contact-forms/contactFormMobile'
-import ContactFormDesktop from "../components/contact-forms/contactFormDesktop";
 import { Icon } from "@iconify/react";
 import GoogleReviews from '../components/google/reviews'
 import FAQ from '../components/contact-forms/faq'
-import ContactForm from '../components/contact-forms/contact-form'
+import ContactFormMobile from '../components/contact-forms/contact-form'
+import ContactFormDesktop from '../components/contact-forms/contact-form-desktop'
+
 
 export default async function Home() {
 
@@ -58,8 +58,8 @@ export default async function Home() {
           </div>
           
           <div className="max-w-md">
-            <ContactForm />
-            {/* <ContactFormDesktop /> */}
+            <ContactFormDesktop />
+
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default async function Home() {
           </div>
           
         </div>
-        <div className="flex">
+        <div className="flex px-0 xs:px-16 sm:px-32">
           <ContactFormMobile />
         </div>
       </div>

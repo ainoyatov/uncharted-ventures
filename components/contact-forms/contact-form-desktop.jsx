@@ -4,7 +4,7 @@ import { useState } from "react";
 import {sendEmail} from '../../utils/sendEmail'
 
 
-export default function ContactFormMobile() {
+export default function ContactFormDesktop() {
 
     const [state, setState] = useState('')
     const [isToggled, setIsToggled] = useState(false);
@@ -37,17 +37,16 @@ export default function ContactFormMobile() {
         setIsToggled(!isToggled);
     }
 
-
     return (
-        <div className="p-12">
+        <div className="p-2">
+
             {
                 state.sent ? (
                     <div className="flex justify-center bg-white border-2 rounded-2xl text-xl text-green-500 font-semibold p-2 m-4">{state.message}</div>
-                ): (
+                ):(
                     ''
                 )
             }
-            
             
             <form action={FormAction} className="border-orange-400 border-4 p-2 backdrop-blur-md">
 

@@ -13,10 +13,11 @@ export async function POST(request) {
 
     //Form status
     const status = 'ok'
+    const sent = true
     
 
     res = {
-        message: "Your message has been sent. Thank you.",
+        message: "Your message has been sent.",
         address: address,
         city: city,
         state: state,
@@ -24,7 +25,8 @@ export async function POST(request) {
         name: name, 
         email:email, 
         phone:phone, 
-        status:status
+        status:status,
+        sent:sent
     }
 
     return Response.json(res)
